@@ -1,214 +1,25 @@
-## 6개월 장기 강의 기록지
+## 🐱‍🚀6개월 장기 강의 기록지
 
 > 국비지원을 받아 K-Digtal traing을 통해 진행 된 강의 입니다.
 
+<img src="README.assets/main.jpg" alt="main" style="zoom:150%;" />
 
 
-## MARKDOWN (7/5 강의)
 
-#### 개념
+## 📅일자별 강의 기록(~ing)
 
-- 2004년 존 그루버가 만든 텍스트 기반 가벼운 마크업 언어
-- Test - to - HTML 호환이 가능한 언어
-- 최소한의 문법으로 구조화
-- `다양한 text editor, 웹 환경에서 모두 지원`
+2022년 7월 5일 - [마크다운]([TIL/0705 at master · JOO-10000-Zi/TIL (github.com)](https://github.com/JOO-10000-Zi/TIL/tree/master/0705))
 
-### 문법 - Heading
+2022년 7월 6일 - [Git/Github]([TIL/0706 at master · JOO-10000-Zi/TIL (github.com)](https://github.com/JOO-10000-Zi/TIL/tree/master/0706))
 
-- '#' 의 개수를 통해서 대응 (h1 ~ h6 까지 표현 가능)
-- 문서 내용의 글자 크기 조정으로는 사용 하지 않는 것이 좋음
 
 
+## ✒강의 참고 자료 사이트
 
-### 문법 - List
+1. Github - [GitHub](https://github.com/)
 
-- 순서가 있는 리스트(ol)와 순서가 없는(ul)로 구성
-  - 순서가 없는 리스트는 '-'(hypen) , '*'(asterisk)사용
-    - 아래 항목 추가는 Tab로 추가
-  - 순서가 있는 리스트는 '1.' 입력(스페이스 必)
-    1. 예시 입력 중
-    2. 추가 예시 입력
+2. Typora - [Typora](https://typora.io/)
 
-
-
-### 문법 - Fenced Code Block
-
-- 코드 블록은 ``(backtick)` 기호 3개를 활용하여 작성(\``` ```)
-
-- 특정 언어를 명시하면 기능이 적용(Syntax Highighting)
-
-  - ```python
-    print('hello')
-    # 주석
-    ```
-
-
-
-### 문법 - lnine Code block
-
-- 코드 블록은 backtick 기호 1개를 인라인에 활용 하여 작성(\` `)
-  - 예시 ) `오늘`, `강의`, `여름`
-
-
-
-### 문법 - Link
-
-- \[문자열](url)을 통해 링크 작성 가능
-  - 특정 파일경로 및 폴더 지정 가능
-    - 예시 [네이버](https://www.naver.com) , [멀티캠퍼스](https://www.multicampus.com/) 
-
-### 문법 - 이미지
-
-- \!\[문자열](url)을 통해 이미지 적용 가능
-  - 이미지를 드롭 해도 사용 가능(이미지 환경설정을 통해 `상대적위치` 적용을 해야 손실 無)
-
-![POO](README.assets/POO.jpg)
-
-
-
-### 문법 - Blockquotes (인용문)
-
-- \>를 통해 작성 한다
-
-> \>를 입력후 내용을 작성 한다
-
-
-
-### 문법 - Table ( 표)
-
-| 이름   | 주소                                     |
-| ------ | ---------------------------------------- |
-| 홍길동 | 조선 향촌읍 노란 주막 뒤 개키우는 집     |
-| 이몽룡 | 고구려 삼천포 느티나무 옆 세번째 돌담 집 |
-|        |                                          |
-
--  일부 지원 안되는 환경이 있을 수 있음
-
-
-
-### 문법 - test 강조
-
-- 굵게 , 기울임등을 통해 효과를 줄 수 있음 
-  - 예시 - **볼드체**(\**볼드**), *기울임*(\*기울임*), ~~취소선~~(\~~취소선~~)
-  - 예시 - ~~***한번에 사용 가능***~~~(한번에 사용 할 경우 \~~\*\*\*하늘\*\*\*\~~ 닫는 순서 `중요`  )
-
-
-
-### 문법 - 수평선
-
-- 3개이상의 asterisks (\***), dashes (\---), or underscores(\___) 사용
-
-  ---
-
-  ***
-
-  ___
-
-  
-
-## Git / GitHub (7/6 강의)
-
-## 1. 개요
-
-- 분산 버전 관리 시스템
-- GUI 와 다른 `CLI(Command Line Interface)'를 의미
-
-
-
-## 2. 특징
-
-1. 명령어
-
-   - pwd() : 현재 디렉토리 출력(폴러 / 파일)
-   - cd() : 디렉토리 이동
-     - . : 현재 디렉토리, . : 상위 디렉토리
-   - LS() : 목록
-   - mkdir() : 디렉토리(폴더) 생성
-   - touch() : 새 파일 생성
-   - git config --global user.name '사용자 ID'
-   - git config --globar suer.email '사용자 email'
-   - clear : 화면 지우기(명령어 작성 기록) / ctrl + L
-   - git init : 버전, 저장관리
-   - git add "name" : 워킹 디렉토리 > 스테잉에어리어 추가
-     - 빨간 네임 > 그린 네임으로 확인
-   - git commit -m "메세지 내용" : 커밋을 통해 버전으로 기록
-     - 내가 무슨 작업을 했는지 기록을 하기위해 메세지 내용 입력 필수!
-   - git status : 현재 버전의 정보 조회
-   - git log : 기록된 버전의 정보 조회
-     - git log -1 : 최근 1개 커밋을 조회
-     - git log  --oneline : 한줄로 보여줘
-     - git log -2 --oneline : 최근 2개를 한줄로 보여줘
-   - rm -rf : init(마스터) 지우기
-
-
-
-2. 버전관리시스템 개념
-
-> 여러버전을 관리하는 시스템
-
-- 1통(working directory) : 작업 중인 환경
-- 2통(Staging Area) : 중간저장 단계(커밋 전 여러 버전을 가지고 있는 단계)
-- 3통(Repository) : 커밋 단계(버전 기록)
-
-
-
-3. GitHub에 Push하기
-
-   - ```
-     git push origin master : 오리진을 마스터로 지정
-     ```
-
-   - ```
-     git remote add origin https://github.com/JOO-10000-Zi(username)/ex1.git(저장소 이름)
-     ```
-
-## 분산버전관리시스템(DVCS)
-
-중간 저장 - 내가 버전기록 파일 들을 모아서 따로 저장하기 위해 존재한다
-
-
-
-Git 파일을 modified(수정), staged(add명령어 사용),committed(커밋완료)로 관리
-
-
-
-## 파일 라이프사이클
-
-1. Untracked : 한번도 커밋 X
-2. Unmodified : 커밋 되었음/ 수정 X
-3. Modified : 2번 수정 된 단계
-4. staged : 임시공간(2통) 커밋 후 2번 으로
-
-
-
-
-
-## 원격저장소 기본 흐름
-
-> push > 원격 저장소에 저장
->
-> pull > 원격 저장소에서 로컬로 가져온다
->
-> 
-
-
-
-
-
-
-
-## 1. (master) 있는 곳에서는 git init을 하지 않는다
-
-## 2. git 명령어를 입력할때에는 항상 경로를 잘보자
-
-## 3. 명령어를 잘 확인 하자
-
-
-
-## 참고 자료
-
-> 버전관리 왜 프로그램,파일 예외 적용 가능 소스 활용
-
-1. 이그노어.io
+3. gitignore.io - [gitignore.io](https://www.toptal.com/developers/gitignore/)
 
    
