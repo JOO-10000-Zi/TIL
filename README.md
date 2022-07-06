@@ -8,9 +8,9 @@
 
 ## 📅일자별 강의 기록(~ing)
 
-2022년 7월 5일 - [마크다운]([TIL/0705 at master · JOO-10000-Zi/TIL (github.com)](https://github.com/JOO-10000-Zi/TIL/tree/master/0705))
+2022년 7월 5일 - [마크다운](https://github.com/JOO-10000-Zi/TIL/tree/master/0705)
 
-2022년 7월 6일 - [Git/Github]([TIL/0706 at master · JOO-10000-Zi/TIL (github.com)](https://github.com/JOO-10000-Zi/TIL/tree/master/0706))
+2022년 7월 6일 - [Git/Github](https://github.com/JOO-10000-Zi/TIL/tree/master/0706)
 
 
 
