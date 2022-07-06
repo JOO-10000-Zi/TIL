@@ -1,6 +1,6 @@
 ## 🐱‍🚀6개월 장기 강의 기록지
 
-> 국비지원을 받아 K-Digtal traing을 통해 진행 된 강의 입니다.
+> 국비지원을 받아 K-Digtal training을 통해 진행 된 강의 입니다.
 
 <img src="README.assets/main.jpg" alt="main" style="zoom:150%;" />
 
