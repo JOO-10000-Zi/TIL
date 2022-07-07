@@ -16,7 +16,7 @@
 
 ## ✒강의 참고 자료 사이트
 
-1. Github - [GitHub](https://github.com/) ▶ 개발자들과의 소통 하기 위한 곳
+1. Github - [GitHub](https://github.com/) ▶ 분산 버전 관리 시스템
 
 2. Typora - [Typora](https://typora.io/) ▶ 마크다운 SW 다운 및 설명(유료전환)
 
