@@ -2,7 +2,7 @@
 
 > 국비지원을 받아 K-Digtal training을 통해 진행 된 강의 입니다.
 
-<img src="README.assets/main.jpg" alt="main" style="zoom:150%;" />
+<img src="README.assets/1466250621766.gif" alt="1466250621766" style="zoom:150%;" />
 
 
 
