@@ -12,6 +12,12 @@
 
 2022년 7월 6일 - [Git/Github](https://github.com/JOO-10000-Zi/TIL/tree/master/0706)
 
+202년 7월 7일 - [원격저장소(Fork&Pull requests)](https://github.com/JOO-10000-Zi/TIL/blob/master/0707/원격저장소_활용(협업).md)
+
+
+
+
+
 
 
 ## ✒강의 참고 자료 사이트
