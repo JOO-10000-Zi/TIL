@@ -11,12 +11,12 @@
 
 1. 명령어
 
-   - pwd() : 현재 디렉토리 출력(폴러 / 파일)
-   - cd() : 디렉토리 이동
+   - pwd(print working directory) : 현재 디렉토리 출력(폴러 / 파일)
+   - cd(vhange directory) : 디렉토리 이동
      - . : 현재 디렉토리, . : 상위 디렉토리
-   - LS() : 목록
-   - mkdir() : 디렉토리(폴더) 생성
-   - touch() : 새 파일 생성
+   - ls(list) : 목록
+   - mkdir(make directory) : 디렉토리(폴더) 생성
+   - touch : 새 파일 생성
    - git config --global user.name '사용자 ID'
    - git config --globar suer.email '사용자 email'
    - clear : 화면 지우기(명령어 작성 기록) / ctrl + L
@@ -30,7 +30,9 @@
      - git log -1 : 최근 1개 커밋을 조회
      - git log  --oneline : 한줄로 보여줘
      - git log -2 --oneline : 최근 2개를 한줄로 보여줘
-   - rm -rf : init(마스터) 지우기
+   - rm (파일명) : 파일 지우기
+   - rm -r (폴더명) : 폴더 지우기
+   - rm -rf : init(마스터) 지우기 (잘못된 위치에서 git init 한 경우)
 
 
 
