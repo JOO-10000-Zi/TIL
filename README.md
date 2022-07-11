@@ -30,12 +30,6 @@
 
 
 
-
-
-
-
-
-
 ## ✒강의 참고 자료 사이트
 
 1. Github - [GitHub](https://github.com/) ▶ 분산 버전 관리 시스템
@@ -43,5 +37,7 @@
 2. Typora - [Typora](https://typora.io/) ▶ 마크다운 SW 다운 및 설명(유료전환)
 
 3. gitignore.io - [gitignore.io](https://www.toptal.com/developers/gitignore/) ▶ 버전관리 예외 파밀 및 폴더 설정 오픈소스 생성
+
+3. codeup - [CodeUp](https://codeup.kr/index.php) ▶ 코드 기본 문제집 제공 연습 하는곳!!
 
    
