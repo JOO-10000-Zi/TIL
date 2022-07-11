@@ -16,6 +16,10 @@
 
 2022년 7월 8일 - [취업 준비 특강](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0708/특강)
 
+2022년 7월 11일 - [Python](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0711)
+
+
+
 
 
 ## 📚 주말 개인 복습
