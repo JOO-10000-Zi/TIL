@@ -8,19 +8,19 @@
 
 ## 📅일자별 강의 기록(~ing)
 
-2022년 7월 5일 - [마크다운](https://github.com/JOO-10000-Zi/TIL/tree/master/0705)
+2022년 7월 5일 - [마크다운](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0705)
 
-2022년 7월 6일 - [Git/Github](https://github.com/JOO-10000-Zi/TIL/tree/master/0706)
+2022년 7월 6일 -[Git/Github](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0706)
 
-2022년 7월 7일 - [원격저장소(Fork&Pull requests)](https://github.com/JOO-10000-Zi/TIL/blob/master/0707/원격저장소_활용(협업).md)
+2022년 7월 7일 - [원격저장소(Fork&Pull requests)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0707)
 
-2022년 7월 8일 - [취업 준비 특강](https://github.com/JOO-10000-Zi/TIL/blob/master/0708/특강/특강정리.md)
+2022년 7월 8일 - [취업 준비 특강](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0708/특강)
 
 
 
 ## 📚 주말 개인 복습
 
-2022년 7월 9일 - [어려웠던 점 복습&기존 자료 수정](https://github.com/JOO-10000-Zi/TIL/tree/master/0709)
+2022년 7월 9일 - [어려웠던 점 복습&기존 자료 수정](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0709)
 
 
 
