@@ -11,7 +11,7 @@ print(lunch[0])
 numbers = input().split()
 print(numbers)
 '''
-
+'''
 num = int(input())
 
 if num > 151 :
@@ -24,4 +24,14 @@ else :
     print('매우좋음')
 
 print(num)
+'''
 
+
+for char in 'apple':
+    if char == 'b':
+        print('b!')
+        break
+else :
+    print('b가 없습니다.')
+    
+    
