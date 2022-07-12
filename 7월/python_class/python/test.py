@@ -22,6 +22,6 @@ elif num > 30:
     print('보통')
 else :
     print('매우좋음')
- 
+
 print(num)
 
