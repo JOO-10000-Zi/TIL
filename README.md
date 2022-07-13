@@ -16,7 +16,19 @@
 
 2022년 7월 8일 - [취업 준비 특강](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0708/특강)
 
-2022년 7월 11일 - [Python](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0711)
+2022년 7월 11일 - [Python(기초)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0711)
+
+2022년 7월 12일 - [python(제어문)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0712)
+
+2022년 7월 13일 - [python(함수)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0713)
+
+
+
+## ✍실습 기록(~ing)
+
+멀티캠퍼스 강의 오후 실습 - [Checkup문제풀이](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/python_class/python)
+
+CpodeUp Python 기초문제 100제 - [Codeup문제풀이](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/python_class/python/codeup)
 
 
 
