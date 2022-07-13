@@ -18,7 +18,7 @@
    - mkdir(make directory) : 디렉토리(폴더) 생성
    - touch : 새 파일 생성
    - git config --global user.name '사용자 ID'
-   - git config --globar suer.email '사용자 email'
+   - git config --globlr user.email '사용자 email'
    - clear : 화면 지우기(명령어 작성 기록) / ctrl + L
    - git init : 버전, 저장관리
    - git add "name" : 워킹 디렉토리 > 스테잉에어리어 추가
