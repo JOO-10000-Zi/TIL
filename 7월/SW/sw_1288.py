@@ -41,18 +41,15 @@ T = int(input())
 # 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
 for test_case in range(1, T + 1):
     # ///////////////////////////////////////////////////////////////////////////////////
-    # 임의 양의 숫자를 기억한다
-    # 기억한 양의 숫자를 한곳으로 누적해서 모은다
-    # 원하는 양의 숫자가 모이면 그만 모은다
-    N = int(input())
-    N1 = N
-    numbers = set()
-    while len(numbers) < 10 :
-        for n in str(N) :
-            numbers.add(n)
-        if len(numbers) == 10:
+    N = int(input())                # 임의 숫자를 받는다
+    N1 = N                          # N1 = N 의 값을 넣는다
+    numbers = set()                 # 중복값을 제거한다
+    while len(numbers) < 10 :       # 반복문을 통해 numbers 값이 10보다 작으면 반복한다
+        for n in str(N) :           # N에 입력된 값을 문자열로 형변환 하여 n으로 저장한다
+            numbers.add(n)          # n으로 추출된 값을 numbers에 값을 추가한다(numbers는 중복값은 제거한다)
+        if len(numbers) == 10:      # 만약 numbers 값이 10과 같아지면 break 한다
             break
-        N += N1  
+        N += N1                     # 위 반복문이 실행되면 N 값에 N1 값을 더한다
     print(f'#{test_case} {N}')
     # N = int(input())
 
