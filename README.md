@@ -10,17 +10,29 @@
 
 2022년 7월 5일 - [마크다운](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0705)
 
-2022년 7월 6일 -[Git/Github](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0706)
+​			 7월 6일 -[Git/Github](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0706)
 
-2022년 7월 7일 - [원격저장소(Fork&Pull requests)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0707)
+​			 7월 7일 - [원격저장소(Fork&Pull requests)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0707)
 
-2022년 7월 8일 - [취업 준비 특강](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0708/특강)
+​			 7월 8일 - [취업 준비 특강](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0708/특강)
 
-2022년 7월 11일 - [Python(기초)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0711)
+​			 7월 11일 - [Python(기초)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0711)
 
-2022년 7월 12일 - [python(제어문)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0712)
+​			 7월 12일 - [python(제어문)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0712)
 
-2022년 7월 13일 - [python(함수)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0713)
+​			 7월 13일 - [python(함수)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0713)
+
+​			 7월 14일 - [python(데이터구조)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0714/0714.md)
+
+​			 7월 15일 - [python(모듈)&프로젝트](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0715/0715.md)
+
+​			 7월 18일 - [python(에러/예외처리)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0718/0718.md)
+
+​			 7월 19일 - [python(객체지향프로그래밍)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0719/0719.md)
+
+​			 7월 20일 - [python(객체지향프로그매링_클래스)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0720/0720.md)
+
+​			 7월 21일 - [python(심화)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0721/0721.md)
 
 
 
