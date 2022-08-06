@@ -1,5 +1,3 @@
-from collections import deque
-
 N = int(input())
 
 CUP_numbers = [1, 2, 3]
@@ -7,10 +5,8 @@ CUP_numbers = [1, 2, 3]
 
 for _ in range(N):
     X, Y = map(int, input().split())
-    CUP_numbers.insert(X-1, Y)
-    CUP_numbers.remove(Y)
-    CUP_numbers.remove(X)
-    CUP_numbers.insert(Y-1, X)
-    print(CUP_numbers)
-print(CUP_numbers)
+    x = CUP_numbers.index(X)
+    y = CUP_numbers.index(Y)
+    CUP_numbers[x], CUP_numbers[y] = CUP_numbers[y], CUP_numbers[x]
+
 print(CUP_numbers[0])
