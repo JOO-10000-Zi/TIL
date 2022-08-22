@@ -190,9 +190,9 @@ FROM tracks
 GROUP BY GenreID
 ORDER BY COUNT(*)
 LIMIT 1;
--- COUNT(*)
+-- GenreID
 -- --------
--- 1
+-- 25
 SELECT Name
 FROM genres
 WHERE GenreID = (SELECT GenreID
