@@ -1,0 +1,25 @@
+/* 아래에 CSS를 작성해주세요. */
+.align-center {
+  text-align: center;
+}
+.name-font {
+  font-size: 12px;
+}
+.main {
+  width: 900px;
+  height : 500px;
+}
+.card {
+  width : 300px;
+  height : 400px;
+}
+.card-image {
+  width : 300px;
+  border-radius: 5%;
+}
+.sub_name {
+  font-size: 11px;
+}
+.sub_body {
+  font-size: 10px;
+}
