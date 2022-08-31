@@ -1,4 +1,7 @@
 /* 아래에 CSS를 작성해주세요. */
+* {
+  box-sizing: border-box;
+}
 .align-center {
   text-align: center;
 }
@@ -6,12 +9,11 @@
   font-size: 12px;
 }
 .main {
-  width: 900px;
-  height : 500px;
+  width: 916px;
 }
 .card {
-  width : 300px;
-  height : 400px;
+  width : 301px;
+  display: inline-block;
 }
 .card-image {
   width : 300px;

@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+div {
+  height : 100px;
+  width : 100px;
+  background-color: blue;
+  color : rgb(255, 255, 255);
+  line-height: 100px;
+  text-align: center;
+  border-color: black;
+  border-style:solid;
+}
+.relative {
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+.parent {
+  position: relative;
+}
+.absolute_child {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.fixed {
+  position:fixed;
+  bottom : 0;
+  right : 0;
+}

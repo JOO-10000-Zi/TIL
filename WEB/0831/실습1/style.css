@@ -1,0 +1,27 @@
+/* 아래에 CSS를 작성해주세요. */
+* {
+  box-sizing: border-box;
+}
+.align-center {
+  text-align: center;
+}
+.title{
+  font-size: 12px;
+  display: block;
+}
+.main_card {
+  width : 900px;
+}
+.card_img {
+  width : 300px;
+  border-radius: 2%;
+}
+.subname {
+  font-size: 9px;
+}
+.smallname {
+  font-size: 10px;
+}
+.card {
+  justify-content: space-around;
+}

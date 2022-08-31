@@ -1,0 +1,33 @@
+/* 아래에 CSS를 작성해주세요. */
+.card {
+  width : 300px;
+  margin : auto;
+  justify-content: center;
+  align-content: center;
+}
+.card_img {
+  width: 300px;
+  border-radius: 2%;
+}
+.small_title {
+  font-size: 12px;
+  color : gray;
+}
+.title_body {
+  font-size: 14px;
+}
+.dc {
+  font-size: 22px;
+  color : skyblue;
+}
+.pay{
+  font-size: 22px;
+  color : black
+}
+.point {
+  font-size: 14px;
+}
+.review {
+  color : rgb(114, 111, 111);
+  font-size: 14px;
+}
