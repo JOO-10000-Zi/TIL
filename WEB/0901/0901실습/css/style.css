@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  min-width: 1280px;
+  color: #333333;
+
+}
+* {
+  box-sizing: border-box;
+}
+.nav {
+  display: flex;
+  height : 3rem;
+  background-color: rgb(204, 204, 204);
+  position : sticky;
+  top: 0;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin: 0rem 1rem;
+}
+.nav_list {
+  display: flex;
+}
+.nav_item {
+  margin: 1rem;
+}
+.nav_link {
+  color : black;
+  text-decoration: none;
+}
+.nav_link:hover {
+  color:white;
+  background-color: blueviolet;
+  border-radius: 5%;
+  padding: 3px;
+}
+.banner {
+  height: 700px;
+  background-image: url("../assets/apparel.jpeg");
+  background-repeat: no-repeat;
+}
+
+.bonmoon {
+  width: 1280px;
+  margin: 3rem;
+}
+.about {
+  display: flex;
+  justify-content: center;
+}
+.about_imge {
+  width: 500px;
+  border-radius: 5%;
+}
+.about2 {
+  width : 500px;
+  align-items: center;
+  margin : 0rem 2rem;
+  display: flex;
+  flex-direction: column
+
+}
+.title {
+  font-size: 2rem;
+  display: block;
+  text-align:center;
+  margin: 0rem 1rem 1rem;
+}
+.p-content {
+  word-wrap: break-word;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center
+}
+.more_img {
+  height: 64px;
+  width : 64px;
+  margin : 1rem;
+}
+.footer_item {
+  width : 1000px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.item_align {
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+.bootom {
+  display: flex;
+  right: 2rem;
+  align-content: flex-end;
+  justify-content: flex-end;
+}
+.main_item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.box {
+  width: 300px;
+  height: 350px;
+  border : 1px solid;
+  padding: 2px;
+  margin: 1rem;
+}
+.item_product {
+  width: 295px;
+  height: 180px;
+}
+.text_br {
+  word-wrap: break-word;
+}
+.item_title {
+  text-align: center;
+  font: bolder;
+  font-size: 20px;
+  margin: 5px;
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 10000px;
+  font-family: 'Jua', 'sans-derif';
+  background-color: rgb(255, 188, 62);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  height: 50px;
+  background-color: white;
+}
+.nav-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  padding: 10px;
+}
+.nav-link:visited {
+  color: black;
+}
+.nav-link:hover {
+  color : skyblue;
+  background-color: black;
+  border-radius: 30%;
+}
+.nav-item {
+  margin : 0 10px;
+}
+.mainpapa {
+  width : 800px;
+  height : 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

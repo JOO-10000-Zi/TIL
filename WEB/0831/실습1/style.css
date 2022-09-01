@@ -10,7 +10,8 @@
   display: block;
 }
 .main_card {
-  width : 900px;
+  width : 1000px;
+  display: flex
 }
 .card_img {
   width : 300px;
@@ -23,5 +24,6 @@
   font-size: 10px;
 }
 .card {
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin: 2px;
 }
