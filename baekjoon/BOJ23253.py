@@ -1,25 +1,22 @@
+import sys
+sys.stdin = open("23253.txt")
 
+N, M = map(int, input().split())
 
-
-
-
-answer = "YES"
-stack_list = [[12, 4, 1], [9, 5, 2], [11, 8, 6], [10, 7, 3]]
-# stack = [11, 10, 8, 5]
-
-for stack in stack_list:
-    comparison = stack.pop()
-
-    while len(stack) != 0 :
-        if stack[-1] > comparison:
-            comparison = stack.pop()
-        else:
-            answer = "NO"
+p = True
+for _ in range(M):
+    book1 = int(input())
+    book1_list = list(map(int, input().split()))
+    for i in range(book1 - 1):
+        if book1_list[i] < book1_list[i+1]:
+            p = False
             break
+    if not p : break
 
+print('Yes' if p else 'No')
+    
 
-
-
+        
 
 
 
