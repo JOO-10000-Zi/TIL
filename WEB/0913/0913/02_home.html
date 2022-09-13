@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <style>
+    .footer {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      height: 40px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    .small-card {
+      display: none;
+    }
+
+    @media (max-width: 992px) {
+      .card {
+        display: block;
+      }
+
+      .table,
+      .small-list-group {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="01_nav_footer.html"><img src="./images/logo.png" style="width: 100px;" alt="img"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="02_home.html">Home</a>
+          <a class="nav-link" href="#Community">Community</a>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-dark nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Login
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Head -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/headimages1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/headimages2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/headimages3.jpg" class="d-block w-100 h-100%" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/headimages4.jpg" class="d-block w-100 h-100%" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <div class="container">
+    <h2 class="text-center fw-bold my-5">Boxoffice</h2>
+    <div class="row">
+      <div class="col col-lg-4 col-md-6 col-sm-12 my-3">
+        <div class="card">
+          <img src="./images/movie1.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col col-lg-4 col-md-6 col-sm-12 my-3">
+        <div class="card">
+          <img src="./images/movie2.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col col-lg-4 col-md-6 col-sm-12 my-3">
+        <div class="card">
+          <img src="./images/movie3.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col col-lg-4 col-md-6 col-sm-12 my-3">
+        <div class="card">
+          <img src="./images/movie4.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col col-lg-4 col-md-6 col-sm-12 my-3">
+        <div class="card">
+          <img src="./images/movie5.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col col-lg-4 col-md-6 col-sm-12 my-3">
+        <div class="card">
+          <img src="./images/movie6.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- community -->
+  <div class="container py-5">
+    <h2 class="text-center fw-bold my-5" id="Community">Community</h2>
+    <div class="row">
+      <div class="col-12 col-lg-2">
+        <ul class="list-group">
+          <li class="list-group-item text-primary">Boxoffice</li>
+          <li class="list-group-item text-primary">Movies</li>
+          <li class="list-group-item text-primary">Genres</li>
+          <li class="list-group-item text-primary">Actors</li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-10">
+        <table class="table table-striped">
+          <thead class="bg-dark text-light">
+            <tr>
+              <th scope="col">영화 제목</th>
+              <th scope="col">글 제목</th>
+              <th scope="col">작성자</th>
+              <th scope="col">작성 시간</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Great Moive title</th>
+              <td>Best Movie Ever</td>
+              <td>user</td>
+              <td>1 minute ago</td>
+            </tr>
+            <tr>
+              <th scope="row">Great Moive title</th>
+              <td>Movie Test</td>
+              <td>user</td>
+              <td>1 minute ago</td>
+            </tr>
+            <tr>
+              <th scope="row">Great Moive title</th>
+              <td>Movie Test</td>
+              <td>user</td>
+              <td>1 minute ago</td>
+            </tr>
+            <tr>
+              <th scope="row">Great Moive title</th>
+              <td>Movie Test</td>
+              <td>user</td>
+              <td>1 minute ago</td>
+            </tr>
+            <tr>
+              <th scope="row">Great Moive title</th>
+              <td>Movie Test</td>
+              <td>user</td>
+              <td>1 minute ago</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="card my-2 small-card">
+          <div class="card-body">
+            <h3 class="card-title">Best Movie Ever</h3>
+            <h5 class="card-text">Great Movie title</h5>
+            <p class="card-text">user</p>
+            <p class="card-text py-2">1 minute ago</p>
+          </div>
+        </div>
+        <div class="card my-2 small-card">
+          <div class="card-body">
+            <h3 class="card-title">Movie Test</h3>
+            <h5 class="card-text">Great Movie title</h5>
+            <p class="card-text">user</p>
+            <p class="card-text py-2">1 minute ago</p>
+          </div>
+        </div>
+        <div class="card my-2 small-card">
+          <div class="card-body">
+            <h3 class="card-title">Movie Test</h3>
+            <h5 class="card-text">Great Movie title</h5>
+            <p class="card-text">user</p>
+            <p class="card-text py-2">1 minute ago</p>
+          </div>
+        </div>
+        <div class="card my-2 small-card">
+          <div class="card-body">
+            <h3 class="card-title">Movie Test</h3>
+            <h5 class="card-text">Great Movie title</h5>
+            <p class="card-text">user</p>
+            <p class="card-text py-2">1 minute ago</p>
+          </div>
+        </div>
+        <div class="card my-2 small-card">
+          <div class="card-body">
+            <h3 class="card-title">Movie Test</h3>
+            <h5 class="card-text">Great Movie title</h5>
+            <p class="card-text">user</p>
+            <p class="card-text py-2">1 minute ago</p>
+          </div>
+        </div>
+      </div>
+
+      <ul class="list-group list-group-horizontal justify-content-center my-3 small-list-group">
+        <li class="list-group-item text-primary">Previous</li>
+        <li class="list-group-item text-primary">1</li>
+        <li class="list-group-item text-primary">2</li>
+        <li class="list-group-item text-primary">3</li>
+        <li class="list-group-item text-primary">Next</li>
+      </ul>
+    </div>
+    
+  </div>
+
+
+
+  <!-- footer -->
+  <div class="footer">
+    <p> 영화 다시보기 무료보기 무비조아/무비모아 @All rights reserved. </p>
+  </div>
+  
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
