@@ -1,28 +1,10 @@
-import heapq
-from collections import deque
+import sys
+sys.stdin = open("2776.txt")
 
-T = int(input())
-
-note1_ = []
-note2_ = []
-for _ in range(T):
-    note1_num = int(input())
-    # for _ in range(note1_num):
-    note1_list = list(map(int, input().split()))
-    for i in note1_list:
-        heapq.heappush(note1_, i)
-
-    note2_num = int(input())
-    # for _ in range(note2_num):
-    note2_list = list(map(int, input().split()))
-    for j in note2_list:
-        heapq.heappush(note2_, j)
-    
-check_ = []
-check_ = deque(note2_)
-
-for _ in range(note1_num):
-    if  check_.popleft() in note1_ :
-        print(1)
-    else:
-        print(0)
+for _ in range(int(input())):
+    N = int(input())
+    li1 = set(map(int, input().split()))
+    M = int(input())
+    li2 = list(map(int, input().split()))
+    for n in li2:
+        print(1 if n in li1 else 0)
