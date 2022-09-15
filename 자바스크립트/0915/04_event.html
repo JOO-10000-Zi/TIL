@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .blue {
+      color: blue;
+
+    }
+  </style>
+</head>
+<body>
+  <h1>이건 복습말고 느낌 이지만 할거야...</h1>  
+  <button id="btn1">클릭</button>
+  <script>
+    const btn1 = document.querySelector('#btn1')
+    btn1.addEventListener('click', function() {
+      const h1 = document.querySelector('h1')
+      h1.classList.toggle('blue')
+    })
+  </script>
+</body>
+</html>
