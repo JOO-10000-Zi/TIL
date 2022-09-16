@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+
+    // while
+    let a = 0
+
+    while (a < 6) {
+      console.log(a)
+      a += 1
+    }
+
+    // for
+    for (let i = 0; i < 6; i++) {
+      console.log(i)
+    }
+
+    // for ... in
+    const capitals = {
+      kores: 'seoul',
+      france: 'paris',
+      japen: 'tokyo'
+    }
+
+    for (let capital in capitals) {
+      console.log(capital)
+    }
+
+    // for...of
+    const fruits = ['딸기','수박', '메론']
+
+    for (let fruit of fruits) {
+      fruit = fruit + '!'
+      console.log(fruit)
+    }
+  </script>
+</body>
+</html>

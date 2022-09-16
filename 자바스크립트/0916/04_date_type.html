@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // Primitive type
+    let message = '안녕하세요'
+
+    let greeting = message
+    console.log(greeting)
+
+    message = 'Helo, Hell!!'
+    console.log(greeting)
+
+    // Reference Type
+    const message1 = ['안녕하세요']
+
+    const greeting1 = message1
+    console.log(greeting1)
+
+    message1[0] = 'Hello, Hell!'
+    console.log(greeting1)
+
+    // 숫자
+    const a = 13
+    const b = -2
+    const c = 3.14
+    const d = 2.998e8
+    const e = Infinity
+    const f = -Infinity
+    const g = NaN
+    console.log(a, b, c, d, e, f, g)
+
+    // 문자
+    const firstname = 'JOO'
+    const lastname = 'ManZi'
+    const fullname = `${firstname} ${lastname}`
+
+    console.log(fullname)
+
+    // 연산자
+    let x = 0
+
+    x += 10
+    console.log(x)
+
+    x-= 3
+    console.log(x)
+
+    x *= 10
+    console.log(x)
+
+    x /= 10
+    console.log(x)
+
+    x++
+    console.log(x)
+
+    x--
+    console.log(x)
+
+    // 비교연산자
+    const numOne = 1
+    const numTwo =100
+    console.log(numOne < numTwo)
+
+    const char1 = 'a'
+    const char2 = 'z'
+    console.log(char1 < char2)
+
+    // 동등 비교 연산자
+    const aa = 1004
+    const bb = '1004'
+    console.log(aa == bb)
+
+    const cc = 1
+    const dd = true
+    console.log(cc == dd)
+
+    console.log(aa + bb)
+    console.log(cc+  dd)
+
+    // 일치 비교 연산자
+    const aaa = 1004
+    const bbb = '1004'
+    console.log(aaa === bbb)
+
+    const ccc = 1
+    const ddd = true
+    console.log(ccc === ddd)
+
+    // 논리 연산자
+    console.log(true && false)
+    console.log(true && true)
+    console.log(1 && 0)
+    console.log(4 && 4)
+    console.log('' && 5)
+
+    console.log(true || false)
+    console.log(false || false)
+    console.log(1 || 0)
+    console.log(4 || 7)
+    console.log('' || 5)
+
+    console.log(!true)
+    console.log(!false)
+
+    // 삼항 연산자
+    console.log(true ? '주' : '세환')
+    console.log(false ? '주' : '세환')
+
+    const result = Math.PI > 4 ? 'Yes' : 'No'
+    console.log(result)
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // if
+    const nation = 'Korea'
+
+    if (nation === 'Korea') {
+      console.log('안녕하세요')
+    } else if (nation === 'France') {
+      console.log('Bonjour')
+    } else {
+      console.log('Hello')
+    }
+
+    // switch
+    const nara = 'korea'
+
+    switch(nara) {
+      case 'korea': {
+        console.log('안녕하세요~')
+      }
+      case 'France' : {
+        console.log('Bonjour!')
+      }
+      case 'japen': {
+        break
+      }
+      default: {
+        console.log('hello')
+      }
+    }
+
+    // 비교
+    // if
+    const OneN = 5
+    const TwoN = 10
+    let operator = '+'
+
+    if (operator === '+') {
+      console.log(OneN + TwoN)
+    } else if (operator === '-') {
+      console.log(OneN - TwoN)
+    } else if (operator === '*') {
+      console.log(OneN * TWoN)
+    } else if (operator === '/') {
+      console.log(OneN / TwoN)
+    } else {
+      console.log('유요하지 않은 연산자입니다.')
+    }
+  
+    // switch
+    switch(operator) {
+      case '+': {
+        console.log(OneN + TwoN)
+        break
+      }
+      case '-': {
+        console.log(OneN - TwoN)
+        break
+      }
+      case '*': {
+        console.log(OneN * TwoN)
+        break
+      }
+      default: {
+        console.log('유효하지 않은 연산자입니다.')
+      }
+    }
+  </script>
+</body>
+</html>
