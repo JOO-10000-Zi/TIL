@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .ball{
+      width: 10rem;
+      height: 10rem;
+      margin: .5rem;
+      background-color: orange;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 10rem;
+      font-size: xx-large;
+      font-weight: bold;
+    }
+    .ball-container {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <h1>인생 역전</h1>
+  <button id="lotto-btn">천국으로 올라가기</button>
+  <div id="result"></div>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <script>
+    const button = document.querySelector('#lotto-btn')
+    button.addEventListener('click', function() {
+      const ballContainer = document.createElement('div')
+      ballContainer.classList.add('ball-container')
+      const numbers = _.sampleSize(_.range(1,46), 6)
+      console.log(numbers)
+      // 천번째
+      const ball = document.createElement('div')
+      ball.classList.add('ball')
+      ball.innerText = numbers[0]
+      ballContainer.appendChild(ball)
+      // 2번째
+      const ball2 = document.createElement('div')
+      ball2.classList.add('ball')
+      ball2.innerText = numbers[1]
+      ballContainer.appendChild(ball2)
+      const result = document.querySelector('#result')
+      // 3번째
+      const ball3 = document.createElement('div')
+      ball3.classList.add('ball')
+      ball3.innerText = numbers[2]
+      ballContainer.appendChild(ball3)
+      const ball4 = document.createElement('div')
+      // 4번째
+      ball4.classList.add('ball')
+      ball4.innerText = numbers[3]
+      ballContainer.appendChild(ball4)
+      // 5번째
+      const ball5 = document.createElement('div')
+      ball5.classList.add('ball')
+      ball5.innerText = numbers[4]
+      ballContainer.appendChild(ball5)
+      // 6번째
+      const ball6 = document.createElement('div')
+      ball6.classList.add('ball')
+      ball6.innerText = numbers[5]
+      ballContainer.appendChild(ball6)
+      result.appendChild(ballContainer)
+      // if문으로 조건에 따라 배경색 지정
+      // 아직은 실력 부족으로..... 모두 하나씩 비교..
+      if(numbers[0]<=10) {
+        ball.style.backgroundColor = 'yellow';
+      } else if(numbers[0]<=20) {
+        ball.style.backgroundColor = 'blue';
+      } else if(numbers[0]<=30) {
+        ball.style.backgroundColor = 'red';
+      } else if(numbers[0]<=40) {
+        ball.style.backgroundColor = 'gray';
+      } else {
+        ball.style.backgroundColor = 'green';
+      }
+      if(numbers[1]<=10) {
+        ball2.style.backgroundColor = 'yellow';
+      } else if(numbers[1]<=20) {
+        ball2.style.backgroundColor = 'blue';
+      } else if(numbers[1]<=30) {
+        ball2.style.backgroundColor = 'red';
+      } else if(numbers[1]<=40) {
+        ball2.style.backgroundColor = 'gray';
+      } else {
+        ball2.style.backgroundColor = 'green';
+      }
+      if(numbers[2]<=10) {
+        ball3.style.backgroundColor = 'yellow';
+      } else if(numbers[2]<=20) {
+        ball3.style.backgroundColor = 'blue';
+      } else if(numbers[2]<=30) {
+        ball3.style.backgroundColor = 'red';
+      } else if(numbers[2]<=40) {
+        ball3.style.backgroundColor = 'gray';
+      } else {
+        ball3.style.backgroundColor = 'green';
+      }
+      if(numbers[3]<=10) {
+        ball4.style.backgroundColor = 'yellow';
+      } else if(numbers[3]<=20) {
+        ball4.style.backgroundColor = 'blue';
+      } else if(numbers[3]<=30) {
+        ball4.style.backgroundColor = 'red';
+      } else if(numbers[3]<=40) {
+        ball4.style.backgroundColor = 'gray';
+      } else {
+        ball4.style.backgroundColor = 'green';
+      }
+      if(numbers[4]<=10) {
+        ball5.style.backgroundColor = 'yellow';
+      } else if(numbers[4]<=20) {
+        ball5.style.backgroundColor = 'blue';
+      } else if(numbers[4]<=30) {
+        ball5.style.backgroundColor = 'red';
+      } else if(numbers[4]<=40) {
+        ball5.style.backgroundColor = 'gray';
+      } else {
+        ball5.style.backgroundColor = 'green';
+      }
+      if(numbers[5]<=10) {
+        ball6.style.backgroundColor = 'yellow';
+      } else if(numbers[5]<=20) {
+        ball6.style.backgroundColor = 'blue';
+      } else if(numbers[5]<=30) {
+        ball6.style.backgroundColor = 'red';
+      } else if(numbers[5]<=40) {
+        ball6.style.backgroundColor = 'gray';
+      } else {
+        ball6.style.backgroundColor = 'green';
+      }
+    })
+  </script>
+</body>
+</html>
