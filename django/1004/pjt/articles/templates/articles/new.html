@@ -1,0 +1,11 @@
+<h1>게시글 작성하기</h1>
+
+<form action="{% url 'articles:create' %}" method="POST">
+    {% csrf_token %}
+    {{ article_Form.as_p }}
+    <!-- <label for="title">제목 : </label>
+    <input type="text" name="title" id="title" required>
+    <label for="content">내용 : </label>
+    <textarea name="content" id="content" cols="30" rows="10" required></textarea> -->
+    <input type="submit" value="작성하기">
+</form>
