@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>수요일 복습, 실습정리</h1>
+
+<h2><a href="{% url 'articles:create' %}"> 강의 느낀점 쓰기</a></h2>
+<hr>
+{% for view in review %}
+<a href="{% url 'articles:detail' view.pk %}">{{ view.title }}</a>
+<p>{{ view.created_at }} | {{ view.update_ad }}</p>
+<hr>
+{% endfor%}
+
+{% endblock %}

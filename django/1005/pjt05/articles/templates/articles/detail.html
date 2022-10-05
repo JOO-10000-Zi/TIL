@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>느낀점 상세보기</h1>
+<br>
+<hr>
+
+제목 : <input type="text" name="title" value="{{ pk.title }}" disabled>
+내용 : <textarea name="content" id="" cols="30" rows="10" disabled>{{ pk.content }}</textarea>
+<a href="{% url 'articles:index' %}">수정하기</a>
+
+{% endblock %}

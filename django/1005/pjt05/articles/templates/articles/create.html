@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>느낀점 작성 하기</h1>
+<br>
+<hr>
+<form action="{% url 'articles:addreview' %}">
+    제목 : <input type="text" name="title">
+    내용 : <textarea name="content" id="" cols="30" rows="10"></textarea>
+    <input type="submit" value="작성하기">
+</form>
+
+{% endblock %}
