@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect
-from .models import reviews
+from .models import Movie
 
 # Create your views here.
 def index(request):
-    review = reviews.objects.order_by('-pk')
+    review = Movie.objects.order_by('-pk')
 
     context ={
         'review' : review
@@ -19,7 +19,7 @@ def addreview(request):
     content = request.GET.get('content')
     runing_time = request.GET.get('runing_time')
 
-    reviews.objects.create(
+    Movie.objects.create(
         title=title,
         content=content,
         runing_time=runing_time,
@@ -28,7 +28,7 @@ def addreview(request):
     return redirect('articles:index')
 
 def detail(request, pk):
-    pk = reviews.objects.get(pk=pk)
+    pk = Movie.objects.get(pk=pk)
     context = {
         "pk":pk
     }
