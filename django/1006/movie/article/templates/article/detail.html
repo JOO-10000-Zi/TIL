@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+  <section>
+    <p>{{ movie.running_time }}분</p>
+    <h1>{{ movie.title }}</h1>
+    <p>{{ movie.summary }}</p>
+    <a class='btn btn-dark' type='button' href="{% url 'article:update' movie.pk %}">수정하기</a>
+    <a class='btn btn-dark' type='button' href="{% url 'article:delete' movie.pk %}">삭제하기</a>
+  </section>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+  <h1 class='my-4'>영화 추가 하기</h1>
+  <form action="{% url 'article:create' %}" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form movie_form %}
+    <input class='btn btn-dark' type="submit" value='추가하기'>
+  </form>
+
+{% endblock %}
