@@ -17,14 +17,12 @@ def create(request):
 def addreview(request):
     title = request.GET.get('title')
     content = request.GET.get('content')
-    created_at = request.GET.get('created_at')
-    update_ad = request.GET.get('update_ad')
+    runing_time = request.GET.get('runing_time')
 
     reviews.objects.create(
         title=title,
         content=content,
-        created_at=created_at,
-        update_ad=update_ad,
+        runing_time=runing_time,
     )
 
     return redirect('articles:index')
