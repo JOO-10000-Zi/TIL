@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+  <h1 class='text-center mt-3'>회원 리스트 현황</h1>
+  <hr>
+  <table class='table'>
+    <thead>
+      <th>pk</th>
+      <th>username</th>
+      <th>email</th>
+    </thead>
+
+    <tbody>
+      <tr>
+        {% for user in users %}
+          <td>{{ user.pk }}</td>
+          <td>
+            <a href="{% url 'accounts:detail' user.pk%}">{{ user.username }}</a>
+          </td>
+          <td>{{ user.email }}</td>
+        </tr>
+      </tbody>
+    {% endfor %}
+  </table>
+
+  <div class='d-flex justify-content-between mt-4'>
+    <a class='btn btn-dark' type='button' href="{% url 'articles:index' %}">Home</a>
+    <a class='btn btn-dark' type='button' href="{% url 'accounts:signup' %}">회원 등록</a>
+  </div>
+{% endblock content %}

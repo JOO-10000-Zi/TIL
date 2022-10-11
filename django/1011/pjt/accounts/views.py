@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-# from django.contrib.auth.forms import UserCreationForm
 from .forms import CustomUserCreationForm
+from .models import User
 
 # Create your views here.
 def signup(request):
@@ -15,3 +15,17 @@ def signup(request):
         'form': form
     }
     return render(request, 'accounts/signup.html', context)
+
+def member(request):
+    users = User.objects.order_by('-pk')
+    context = {
+        'users' : users
+    }
+    return render(request, 'accounts/member.html', context)
+
+def detail(request, pk):
+    users = User.objects.get(pk=pk)
+    context = {
+        'users':users
+    }
+    return render(request, 'accounts/detail.html', context)

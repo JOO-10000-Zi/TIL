@@ -2,6 +2,9 @@
 {% load django_bootstrap5 %}
 
 {% block content %}
-  <h1>환영합니다</h1>
-
+  <h1 class='text-center mt-3'>환영합니다</h1>
+  <hr>
+  <div class='text-end'>
+    <a class='btn btn-dark' type='button' href="{% url 'accounts:member' %}">회원리스트</a>
+  </div>
 {% endblock content %}

@@ -5,4 +5,6 @@ app_name = 'accounts'
 
 urlpatterns = [
     path('signup/', views.signup, name='signup'),
+    path('member/', views.member, name='member'),
+    path('detail/<int:pk>', views.detail, name='detail'),
 ]
