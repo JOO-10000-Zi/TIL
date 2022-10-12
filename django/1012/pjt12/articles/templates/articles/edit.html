@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load django_bootstrap5 %}
 
 {% block content %}
   <div class="container ">
@@ -7,7 +8,7 @@
     </div>
     <hr>
     <div class="container d-flex justify-content-center ">
-      <form action="{% url 'articles:update' pk.pk %}">
+      <form action="{% url 'articles:edit' pk.pk %}">
 
         <div class="input-group input-group-lg mb-5" style="width: 50rem;">
           <span class="input-group-text" id="inputGroup-sizing-lg">제목</span>

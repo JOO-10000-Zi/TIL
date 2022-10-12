@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load django_bootstrap5 %}
 
 {% block content %}
 
@@ -8,7 +9,8 @@
     </div>
     <hr>
     <div class="container d-flex justify-content-center ">
-      <form action="{% url 'articles:send' %}">
+      <form action="{% url 'articles:create' %}" method="POST">
+        {% csrf_token %}
 
         <div class="input-group input-group-lg mb-5" style="width: 50rem;">
           <span class="input-group-text" id="inputGroup-sizing-lg">제목</span>

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load django_bootstrap5 %}
 
 {% block content%}
   <h1>자유 게시판</h1>
@@ -26,8 +27,10 @@
       {% endfor %}
 
     </table>
-    <div class="d-flex justify-content-end container">
-      <a href="{% url 'articles:create' %}" class="btn btn-primary" role="button">리뷰 작성하기</a>
-    </div>
+    {% if request.user.is_authenticated %}
+      <div class="d-flex justify-content-end container">
+        <a href="{% url 'articles:create' %}" class="btn btn-primary" role="button">리뷰 작성하기</a>
+      </div>
+    {% endif %}
   </div>
 {% endblock %}
