@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+  <h1>{{ users.username }}님의 상세 프로필</h1>
+  <hr>
+  사용자 이름 :
+  {{ users.username }}<br>
+  Email :
+  {{ users.email }}<br>
+  가입 날짜 :
+  {{ users.date_joined }}<br>
+{% endblock content %}

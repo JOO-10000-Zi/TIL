@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content%}
+  <h1 class='text-center my-4'>회원 리스트</h1>
+  <hr>
+  <table class='table text-center'>
+    <thead>
+      <th>pk</th>
+      <th>username</th>
+      <th>email</th>
+    </thead>
+
+    <tbody>
+      <tr>
+        {% for user in users %}
+          <td>{{ user.pk }}</td>
+          <td>
+            <a href="{% url 'accounts:detail' user.pk %}">{{ user.username }}</a>
+          </td>
+          <td>{{ user.email }}</td>
+        </tr>
+      </tbody>
+    {% endfor %}
+  </table>
+{% endblock %}
