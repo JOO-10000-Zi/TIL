@@ -30,21 +30,31 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{% url 'articles:index' %}">자유게시판</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'accounts:signup' %}">회원가입</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'accounts:index' %}">회원목록</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'accounts:login' %}">로그인</a>
-            </li>
+            {% if request.user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'accounts:index' %}">회원목록</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">로그아웃</a>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'accounts:signup' %}">회원가입</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'accounts:login' %}">로그인</a>
+              </li>
+            {% endif %}
           </ul>
         </div>
       </div>
     </nav>
     <section class='container mt-4'>
-      <p class='text-end'>{{ user }}님 환영 합니다</p>
+      {% if request.user.is_authenticated %}
+        <p class='text-end'>{{ user }}님 환영 합니다</p>
+      {% else %}
+        <p></p>
+      {% endif %}
       {% block content %}{% endblock content %}
     </section>
   </body>
