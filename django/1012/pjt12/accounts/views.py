@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from accounts.forms import CustomUserCreationForm
+from django.contrib.auth.forms import AuthenticationForm
 from .models import User
 
 # Create your views here.
@@ -29,3 +30,12 @@ def detail(request, pk):
         'users': users
     }
     return render(request, 'accounts/detail.html', context)
+
+def login(request):
+    # if request.method == 'POST':
+
+    form = AuthenticationForm()
+    context = {
+        'form':form
+    }
+    return render(request, 'accounts/login.html', context)

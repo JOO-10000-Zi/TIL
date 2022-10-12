@@ -22,4 +22,8 @@
       </tbody>
     {% endfor %}
   </table>
+  <div class='d-flex justify-content-between mt-4'>
+    <a class='btn btn-dark' type='button' href="{% url 'articles:index' %}">Home</a>
+    <a class='btn btn-dark' type='button' href="{% url 'accounts:signup' %}">회원 등록</a>
+  </div>
 {% endblock %}
