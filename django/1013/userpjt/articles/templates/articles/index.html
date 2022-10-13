@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% block title %}
+  메인페이지
+{% endblock title %}
+
+{% block content %}
+  <h1 class='my-4 text-center'>안녕하세요</h1>
+  <div>
+    <table class="table table-dark  table-hover p-3 container text-center">
+      <thead>
+        <th>게시글 번호</th>
+        <th>제목</th>
+        <th>작성 시간</th>
+
+      </thead>
+
+      <tbody>
+        <tr>
+          {% for review in reviews %}
+            <td>{{ review.pk }}</td>
+            <td>
+              <a href="{% url 'articles:detail' review.pk %}">{{ review.title }}</a>
+            </td>
+            <td>{{ review.created_at }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+
+    </table>
+    {% if request.user.is_authenticated %}
+      <div class="d-flex justify-content-end container">
+        <a href="{% url 'articles:create' %}" class="btn btn-primary" role="button">리뷰 작성하기</a>
+      </div>
+    {% endif %}
+  {% endblock content %}
