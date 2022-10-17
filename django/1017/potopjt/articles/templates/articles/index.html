@@ -11,6 +11,7 @@
     </thead>
 
     <tbody>
+
       {% for article in articles %}
         <tr>
           <td>{{ article.pk }}</td>
@@ -19,8 +20,8 @@
           </td>
           <td>{{ article.created_at }}</td>
         </tr>
-      </tbody>
-    {% endfor %}
+      {% endfor %}
+    </tbody>
   </table>
   <a class='btn btn-dark' href="{% url 'articles:create' %}">글쓰기</a>
 {% endblock content %}
