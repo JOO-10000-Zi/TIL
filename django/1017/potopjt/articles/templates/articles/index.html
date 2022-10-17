@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+  <h1 class='text-center my-4'>게시판</h1>
+  <table class='table text-center'>
+    <thead>
+      <th>게시번호</th>
+      <th>제목</th>
+      <th>내용</th>
+    </thead>
+
+    <tbody>
+      {% for article in articles %}
+        <tr>
+          <td>{{ article.pk }}</td>
+          <td>
+            <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>
+          </td>
+          <td>{{ article.created_at }}</td>
+        </tr>
+      </tbody>
+    {% endfor %}
+  </table>
+  <a class='btn btn-dark' href="{% url 'articles:create' %}">글쓰기</a>
+{% endblock content %}
