@@ -11,8 +11,7 @@ def index(request):
     return render(request, 'articles/index.html', context)
 
 def create(request):
-    form = ArticleForm(request.POST, request.FILES)
-    print(request.FILES)
+    form = ArticleForm(request.POST)
     if form.is_valid():
         form.save()
         messages.success(request, '글작성을 완료 했습니다.')
