@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{% block title %}{% endblock title %}</title>
     {% load django_bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
@@ -33,7 +33,7 @@
 
             {% comment %} {% if request.user.is_authenticated %} {% endcomment %}
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="">리뷰 작성</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'articles:create' %}">리뷰 작성</a>
               </li>
               {% comment %} <li class="nav-item">
                 <a class="nav-link" href="">회원목록</a>
