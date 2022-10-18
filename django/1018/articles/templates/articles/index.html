@@ -15,7 +15,7 @@
         <tr>
           <td>{{ article.pk }}</td>
           <td>
-            <a href="">{{ article.title }}</a>
+            <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>
           </td>
           <td>{{ article.created_at }}</td>
         </tr>

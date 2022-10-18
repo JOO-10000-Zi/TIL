@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+  <div class="m-3">
+    <h1>{{ articles.title }}</h1>
+    <hr>
+    <p>{{ articles.content }}</p>
+    {% if articles.image %}
+    <img src="{{ articles.image.url }}" alt="{{ articles.image }}">
+    {% endif %}
+    <a class="btn btn-dark py-sm-1" href="{% url 'articles:update' articles.pk %}" role="button">수정하기</a>
+    {% comment %} <a class="btn btn-danger py-sm-1" href="{% url 'articles:delete' articles.pk %}" role="button">삭제</a> {% endcomment %}
+  </div>
+{% endblock content %}
