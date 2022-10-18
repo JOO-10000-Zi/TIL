@@ -14,10 +14,28 @@
   </div>
   <hr>
   <div>
-    <form action="" method="POST">
+    <form action="{% url 'articles:comment_create' articles.pk %}" method="POST">
         {% csrf_token %}
         {% bootstrap_form comment_form layout='inline'%}
         <input type="submit" class='btn btn-dark mt-2' value='댓글달기'>
     </form>
   </div>
+  <h3 class='mt-4'>댓글</h3>
+  {% if comments %}
+    <p><b>{{comments|length }}개의 댓글이 있습니다.</b></p>
+  {% endif %}
+  <hr>
+  {% for comment in articles.comment_set.all %}
+  <div class='d-flex justify-content-between'>
+    <p>{{ comment.content }}</p>
+    <p>{{ comment.created_at }}</p>
+    <form action="{% url 'articles:comment_delete' articles.pk comment.pk %}" method="POST">
+        {% csrf_token %}
+        <input type="submit" class='btn btn-dark' value='삭제'>
+    </form>
+  </div>
+  <hr>
+  {% empty %}
+  <p>no comment....</p>
+  {% endfor %}
 {% endblock content %}
