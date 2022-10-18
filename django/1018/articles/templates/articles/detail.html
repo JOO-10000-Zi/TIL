@@ -12,4 +12,12 @@
     <a class="btn btn-dark py-sm-1" href="{% url 'articles:update' articles.pk %}" role="button">수정하기</a>
     {% comment %} <a class="btn btn-danger py-sm-1" href="{% url 'articles:delete' articles.pk %}" role="button">삭제</a> {% endcomment %}
   </div>
+  <hr>
+  <div>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form comment_form layout='inline'%}
+        <input type="submit" class='btn btn-dark mt-2' value='댓글달기'>
+    </form>
+  </div>
 {% endblock content %}
