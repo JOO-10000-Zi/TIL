@@ -1,18 +1,23 @@
 {% extends 'base.html' %}
 {% load django_bootstrap5 %}
 {% block title %}상세보기{% endblock title %}
+
 {% block content %}
   <div class="m-3">
     <h1>{{ articles.title }}</h1>
     <hr>
+    <p>작성자 : {{ articles.user }}
     <p>{{ articles.content }}</p>
     {% if articles.image %}
     <img src="{{ articles.image.url }}" alt="{{ articles.image }}">
     {% endif %}
+    {% if request.user.is_authenticated %}
     <a class="btn btn-dark py-sm-1" href="{% url 'articles:update' articles.pk %}" role="button">수정하기</a>
+    {% endif %}
     {% comment %} <a class="btn btn-danger py-sm-1" href="{% url 'articles:delete' articles.pk %}" role="button">삭제</a> {% endcomment %}
   </div>
   <hr>
+  {% if request.user.is_authenticated %}
   <div>
     <form action="{% url 'articles:comment_create' articles.pk %}" method="POST">
         {% csrf_token %}
@@ -20,6 +25,7 @@
         <input type="submit" class='btn btn-dark mt-2' value='댓글달기'>
     </form>
   </div>
+  {% endif %}
   <h3 class='mt-4'>댓글</h3>
   {% if comments %}
     <p><b>{{comments|length }}개의 댓글이 있습니다.</b></p>

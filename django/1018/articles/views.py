@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Article, Comment
 from .forms import ArticleForm, CommentForm
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def index(request):
@@ -11,12 +12,16 @@ def index(request):
     }
     return render(request, 'articles/index.html', context)
 
+@login_required
 def create(request):
-    form = ArticleForm(request.POST)
-    if form.is_valid():
-        form.save()
-        messages.success(request, '글작성을 완료 했습니다.')
-        return redirect('articles:index')
+    if request.method == "POST":
+        form = ArticleForm(request.POST)
+        if form.is_valid():
+            article = form.save(commit=False)
+            article.user = request.user
+            article.save()
+            messages.success(request, '글작성을 완료 했습니다.')
+            return redirect('articles:index')
     else:
         form = ArticleForm()
     context = {

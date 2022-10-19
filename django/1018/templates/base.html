@@ -30,14 +30,15 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{% url 'articles:index' %}">리뷰 목록</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">로그인</a>
-            </li>
             {% if request.user.is_authenticated %}
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{% url 'articles:create' %}">리뷰 작성</a>
             </li>
-            {% endif%}
+            {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="">로그인</a>
+            </li>
+            {% endif %}
             {% comment %} {% if request.user.is_authenticated %} {% endcomment %}
               {% comment %} <li class="nav-item">
                 <a class="nav-link" href="">회원목록</a>
