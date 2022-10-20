@@ -8,7 +8,6 @@
     <thead>
       <th>게시번호</th>
       <th>제목</th>
-      <th>작성 일자</th>
       <th>작성자</th>
     </thead>
 
@@ -17,15 +16,14 @@
         <tr>
           <td>{{ article.pk }}</td>
           <td>
-            <a href="">{{ article.title }}</a>
+            <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>
           </td>
-          <td>{{ article.created_at }}</td>
           <td>{{ article.user }}</td>
         </tr>
       {% endfor %}
     </tbody>
   </table>
-  {% comment %} {% if request.user.is_authenticated %}
+  {% if request.user.is_authenticated %}
     <a class='btn btn-dark' href="{% url 'articles:create' %}">글쓰기</a>
-  {% endif %} {% endcomment %}
+  {% endif %}
 {% endblock content %}

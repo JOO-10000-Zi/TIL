@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock title %}</title>
+    <title>
+      {% block title %}{% endblock title %}
+    </title>
     {% load django_bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
@@ -30,17 +32,17 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{% url 'articles:index' %}">리뷰 목록</a>
             </li>
-            {% comment %} {% if request.user.is_authenticated %}
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{% url 'articles:create' %}">리뷰 작성</a>
-            </li>
+            {% if request.user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">리뷰 작성</a>
+              </li>
             {% else %}
-            <li class="nav-item">
-              <a class="nav-link" href="">로그인</a>
-            </li>
-            {% endif %} {% endcomment %}
-            {% comment %} {% if request.user.is_authenticated %} {% endcomment %}
-              {% comment %} <li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link" href="">로그인</a>
+              </li>
+            {% endif %}
+            {% if request.user.is_authenticated %}
+              <li class="nav-item">
                 <a class="nav-link" href="">회원목록</a>
               </li>
               <li class="nav-item">
@@ -50,15 +52,15 @@
               <li class="nav-item">
                 <a class="nav-link" href="">회원가입</a>
               </li>
-            {% endif %} {% endcomment %}
+            {% endif %}
           </ul>
         </div>
       </div>
     </nav>
     {% if messages %}
-        {% for message in messages %}
+      {% for message in messages %}
         <div class='alert alert-{{message.tags}}'>{{ message }}</div>
-        {% endfor %}
+      {% endfor %}
     {% endif %}
     <div class='container'>
       {% if request.user.is_authenticated %}
