@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-5-+de1b_80k%$1arh14t@*il^(r84mbke=a88fuvuvk3#^iri='
+SECRET_KEY = 'django-insecure-ql_7!odfwh6ulv7td(b#@w7-&+e(%#q=a*ij76%t7+!z)559m*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -32,10 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'articles',
-    'accounts',
-    'django_bootstrap5',
-    'django_extensions',
     'imagekit',
+    'django_bootstrap5'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,16 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = BASE_DIR / 'images'
-MEDIA_URL = '/media/'
-
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# User model
-AUTH_USER_MODEL = 'accounts.User'
-
-MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'

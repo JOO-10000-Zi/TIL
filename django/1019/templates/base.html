@@ -32,7 +32,7 @@
             </li>
             {% comment %} {% if request.user.is_authenticated %}
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="">리뷰 작성</a>
+              <a class="nav-link active" aria-current="page" href="{% url 'articles:create' %}">리뷰 작성</a>
             </li>
             {% else %}
             <li class="nav-item">
@@ -55,7 +55,7 @@
         </div>
       </div>
     </nav>
-    {% comment %} {% if messages %}
+    {% if messages %}
         {% for message in messages %}
         <div class='alert alert-{{message.tags}}'>{{ message }}</div>
         {% endfor %}
@@ -66,7 +66,7 @@
           <a href="">{{ user.username }}님 환영합니다.</a>
         </p>
       {% endif %}
-      <div class='container'> {% endcomment %}
+      <div class='container'>
         {% block content %}{% endblock content %}
       </div>
     </body>

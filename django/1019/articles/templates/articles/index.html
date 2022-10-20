@@ -3,7 +3,7 @@
 {% block title %}게시판 메인 페이지{% endblock title %}
 
 {% block content %}
-  {% comment %} <h1 class='text-center my-4'>게시판</h1>
+  <h1 class='text-center my-4'>게시판</h1>
   <table class='table text-center'>
     <thead>
       <th>게시번호</th>
@@ -25,7 +25,7 @@
       {% endfor %}
     </tbody>
   </table>
-  {% if request.user.is_authenticated %}
-    <a class='btn btn-dark' href="">글쓰기</a>
+  {% comment %} {% if request.user.is_authenticated %}
+    <a class='btn btn-dark' href="{% url 'articles:create' %}">글쓰기</a>
   {% endif %} {% endcomment %}
 {% endblock content %}
