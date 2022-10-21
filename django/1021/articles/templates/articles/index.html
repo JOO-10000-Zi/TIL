@@ -16,7 +16,7 @@
         <tr>
           <td>{{ article.pk }}</td>
           <td>
-            <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>
+            <a href="">{{ article.title }}</a>
           </td>
           <td>{{ article.user }}</td>
         </tr>
@@ -24,6 +24,6 @@
     </tbody>
   </table>
   {% if request.user.is_authenticated %}
-    <a class='btn btn-dark' href="">글쓰기</a>
+    <a class='btn btn-dark' href="{% url 'articles:create' %}">글쓰기</a>
   {% endif %}
 {% endblock content %}

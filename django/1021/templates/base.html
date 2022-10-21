@@ -32,7 +32,7 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{% url 'articles:index' %}">리뷰 목록</a>
             </li>
-            {% comment %} {% if request.user.is_authenticated %}
+            {% if request.user.is_authenticated %}
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="">리뷰 작성</a>
               </li>
@@ -40,8 +40,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="">로그인</a>
               </li>
-            {% endif %} {% endcomment %}
-            {% comment %} {% if request.user.is_authenticated %}
+            {% endif %}
+            {% if request.user.is_authenticated %}
               <li class="nav-item">
                 <a class="nav-link" href="">회원목록</a>
               </li>
@@ -52,12 +52,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="">회원가입</a>
               </li>
-            {% endif %} {% endcomment %}
+            {% endif %}
           </ul>
         </div>
       </div>
     </nav>
-    {% comment %} {% if messages %}
+    {% if messages %}
       {% for message in messages %}
         <div class='alert alert-{{message.tags}}'>{{ message }}</div>
       {% endfor %}
@@ -67,7 +67,7 @@
         <p class='text-end'>
           <a href="">{{ user.username }}님 환영합니다.</a>
         </p>
-      {% endif %} {% endcomment %}
+      {% endif %}
 
       <div class='container'>
         {% block content %}{% endblock content %}

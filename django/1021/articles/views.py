@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect
 from .models import Article
+from .forms import ArticleForm
 from django.contrib.auth import login as auth_login
 from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.decorators import login_required
+
 # Create your views here.
 def index(request):
     articles = Article.objects.order_by('-pk')
@@ -22,3 +25,18 @@ def login(request):
         'form':form
     }
     return render(request, 'articles/login.html', context)
+
+@login_required
+def create(request):
+    form = ArticleForm(request.POST)
+    if form.is_valid():
+        article_form = form.save(commit=False)
+        article_form.user = request.user
+        article_form.save()
+        return redirect('articles:index')
+    else:
+        form = ArticleForm()
+    context = {
+        'form':form
+    }
+    return render(request, 'articles/create.html', context)

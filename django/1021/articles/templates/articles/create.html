@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+
+  <div class="container ">
+    <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+      <h1 class="text-center">게시글 작성</h1>
+    </div>
+    <hr>
+    <div class="container d-flex justify-content-center ">
+      <form action="" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <div class='text-center'>
+          <input class='btn btn-dark my-3' type="submit" value='작성하기'>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
