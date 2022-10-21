@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% block title %}게시글 상세보기{% endblock title %}
+
+{% block content %}
+  <div class="m-3">
+    <h1>{{ articles.title }}</h1>
+    <hr>
+
+    <p>내용 :
+      {{ articles.content }}</p>
+    <br>
+    <hr>
+    {% if request.user == articles.user %}
+      <a class="btn btn-primary py-sm-1" href="" role="button">변경</a>
+      <a class="btn btn-danger py-sm-1" href="" role="button">삭제</a>
+    {% endif %}
+  </div>
+{% endblock %}

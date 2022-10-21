@@ -16,7 +16,7 @@
         <tr>
           <td>{{ account.pk }}</td>
           <td>
-            <a href="">{{ account.username }}</a>
+            <a href="{% url 'accounts:detail' account.pk %}">{{ account.username }}</a>
           </td>
           <td>{{ account.email }}</td>
         </tr>

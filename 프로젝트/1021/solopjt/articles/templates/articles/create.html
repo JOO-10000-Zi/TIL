@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% block title %}게시글 작성하기{% endblock title %}
+
+{% block content %}
+
+  <div class="container ">
+    <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+      <h1 class="text-center my-4">게지글 작성</h1>
+    </div>
+    <hr>
+    <div class="container d-flex justify-content-center ">
+      <form action="" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <div class="d-flex justify-content-center">
+          <input class="btn btn-dark" type="submit" value="작성하기">
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

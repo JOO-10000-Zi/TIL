@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% block title %}회원정보 상세보기{% endblock title %}
+
+{% block content %}
+  <h1 class='text-center my-4'>{{ users.username }}님의 상세 프로필</h1>
+  <hr>
+  사용자 닉네임 :
+  {{ users.username }}<br>
+  사용자 이름 :
+  {{ user.last_name }}
+  {{ user.first_name }}<br>
+  Email :
+  {{ users.email }}<br>
+  가입 날짜 :
+  {{ users.date_joined }}<br>
+
+  <a class='btn btn-dark my-3' href="{% url 'accounts:update'%}">수정하기</a>
+
+{% endblock content %}
