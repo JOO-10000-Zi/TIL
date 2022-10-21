@@ -10,7 +10,7 @@
   내용 :
   {{ article.content }}
   <hr>
-  {%if request.user.is_authenticated %}
-    <a class='btn btn-dark my-3' href="}">수정하기</a>
+  {%if request.user == article.user %}
+    <a class='btn btn-dark my-3' href="{% url 'articles:update' article.pk %}">수정하기</a>
   {% endif %}
 {% endblock content %}
