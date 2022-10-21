@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% block title %}게시판 메인 페이지{% endblock title %}
+
+{% block content %}
+  <h1 class='text-center my-4'>게시판</h1>
+  <table class='table text-center'>
+    <thead>
+      <th>게시번호</th>
+      <th>제목</th>
+      <th>작성자</th>
+    </thead>
+
+    <tbody>
+      {% for article in articles %}
+        <tr>
+          <td>{{ article.pk }}</td>
+          <td>
+            <a href="">{{ article.title }}</a>
+          </td>
+          <td>{{ article.user }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% comment %} {% if request.user.is_authenticated %} {% endcomment %}
+    <a class='btn btn-dark' href="">글쓰기</a>
+  {% comment %} {% endif %} {% endcomment %}
+{% endblock content %}
