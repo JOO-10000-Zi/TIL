@@ -38,19 +38,19 @@
               </li>
             {% comment %} {% else %} {% endcomment %}
               <li class="nav-item">
-                <a class="nav-link" href="">로그인</a>
+                <a class="nav-link" href="{% url 'accounts:login' %}">로그인</a>
               </li>
             {% comment %} {% endif %} {% endcomment %}
             {% comment %} {% if request.user.is_authenticated %} {% endcomment %}
               <li class="nav-item">
-                <a class="nav-link" href="">회원목록</a>
+                <a class="nav-link" href="{% url 'accounts:index' %}">회원목록</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="">로그아웃</a>
               </li>
             {% comment %} {% else %} {% endcomment %}
               <li class="nav-item">
-                <a class="nav-link" href="">회원가입</a>
+                <a class="nav-link" href="{% url 'accounts:signup' %}">회원가입</a>
               </li>
             {% comment %} {% endif %} {% endcomment %}
           </ul>

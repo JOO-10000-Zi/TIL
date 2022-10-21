@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% block title %}로그인 페이지{% endblock title %}
+
+{% block content %}
+  <h1 class='text-center'>안녕하세요</h1>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% bootstrap_button button_type="submit" button_class="btn-primary" content="로그인하기" %}
+  </form>
+{% endblock content %}

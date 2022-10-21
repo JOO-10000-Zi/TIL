@@ -8,18 +8,19 @@
     <thead>
       <th>ID</th>
       <th>닉네임</th>
-      <th>가입일자</th>
+      <th>이메일</th>
     </thead>
 
     <tbody>
-
-      <tr>
-        <td></td>
-        <td>
-          <a href=""></a>
-        </td>
-        <td></td>
-      </tr>
+      {% for account in accounts %}
+        <tr>
+          <td>{{ account.pk }}</td>
+          <td>
+            <a href="">{{ account.username }}</a>
+          </td>
+          <td>{{ account.email }}</td>
+        </tr>
+      {% endfor %}
     </tbody>
   </table>
 
