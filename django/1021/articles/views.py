@@ -40,3 +40,10 @@ def create(request):
         'form':form
     }
     return render(request, 'articles/create.html', context)
+
+def detail(request, pk):
+    articles = Article.objects.get(pk=pk)
+
+    context = {"article": articles}
+
+    return render(request, "articles/detail.html", context)
