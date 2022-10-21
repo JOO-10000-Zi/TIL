@@ -44,9 +44,9 @@ def logout(request):
     return redirect('accounts:index')
 
 def detail(request, pk):
-    users = User.objects.get(pk=pk)
+    account_users = User.objects.get(pk=pk)
 
-    context = {"users": users}
+    context = {"account_users": account_users}
 
     return render(request, "accounts/detail.html", context)
 

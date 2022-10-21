@@ -61,8 +61,8 @@
     {% endif %} {% endcomment %}
     <div class='container'>
       {% if request.user.is_authenticated %}
-        <p class='text-end'>
-          <a href="{% url 'accounts:detail' user.pk %">{{ user.username }}님 환영합니다.</a>
+        <p class='text-end mt-2'>
+          <a href="{% url 'accounts:detail' user.pk %}">{{ user.username }}님 환영합니다.</a>
         </p>
       {% endif %}
 

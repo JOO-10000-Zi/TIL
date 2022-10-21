@@ -10,3 +10,9 @@ class ArticlesForm(forms.ModelForm):
             'title': '제목',
             'content': '내용',
         }
+
+class CommentForm(forms.ModelForm):
+
+    class Meta:
+        model = Comment
+        fields = ('content',)

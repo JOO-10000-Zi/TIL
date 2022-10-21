@@ -3,18 +3,25 @@
 {% block title %}회원정보 상세보기{% endblock title %}
 
 {% block content %}
-  <h1 class='text-center my-4'>{{ users.username }}님의 상세 프로필</h1>
+  <h1 class='text-center my-4'>{{ account_users.username }}님의 상세 프로필</h1>
   <hr>
   사용자 닉네임 :
-  {{ users.username }}<br>
+  {{ account_users.username }}<br>
   사용자 이름 :
-  {{ user.last_name }}
-  {{ user.first_name }}<br>
+  {{ account_users.last_name }}
+  {{ account_users.first_name }}<br>
   Email :
-  {{ users.email }}<br>
+  {{ account_users.email }}<br>
   가입 날짜 :
-  {{ users.date_joined }}<br>
+  {{ account_users.date_joined }}<br>
+  <hr>
+  {% for article in account_users.articles_set.all %}
+    <a href="{% url 'articles:detail' article.pk %}">{{ article.title}}</a>
+    <br>
+  {% endfor %}
 
-  <a class='btn btn-dark my-3' href="{% url 'accounts:update'%}">수정하기</a>
+  {% if reuqest.user == account_users.user %}
+    <a class='btn btn-dark my-3' href="{% url 'accounts:update'%}">수정하기</a>
+  {% endif %}
 
 {% endblock content %}

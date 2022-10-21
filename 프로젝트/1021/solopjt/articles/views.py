@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Articles
-from .forms import ArticlesForm
+from .forms import ArticlesForm, CommentForm
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
@@ -28,8 +28,12 @@ def create(request):
 
 def detail(request, pk):
     articles = Articles.objects.get(pk=pk)
+    comment_form = CommentForm()
+    comments = articles.comment_set.all()
     context = {
-        'articles': articles
+        'articles': articles,
+        'comment_form': comment_form,
+        'comments' : comments,
     }
     return render(request, 'articles/detail.html', context)
 
@@ -47,3 +51,19 @@ def update(request, pk):
         'form': form
     }
     return render(request, 'articles/update.html', context)
+
+# 댓글 구현
+def comment_create(request, pk):
+    article = Articles.objects.get(pk=pk)
+    comment_form = CommentForm(request.POST)
+    if comment_form.is_valid():
+        comment = comment_form.save(commit=False)
+        comment.article = article
+        comment.user = request.user 
+        comment.save()
+    return redirect('articles:detail', article.pk )
+
+def comment_delete(request, article_pk, comment_pk):
+    comment = CommentForm.objects.get(pk=comment_pk)
+    comment.delete()
+    return redirect('articles:detail', article_pk)
