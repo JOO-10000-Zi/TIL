@@ -32,3 +32,18 @@ def detail(request, pk):
         'articles': articles
     }
     return render(request, 'articles/detail.html', context)
+
+@login_required
+def update(request, pk):
+    articles = Articles.objects.get(pk=pk)
+    if request.method == "POST":
+        form = ArticlesForm(request.POST, instance=articles)
+        if form.is_valid():
+            form.save()
+            return redirect('articles:detail', articles.pk)
+    else:
+        form = ArticlesForm(instance=articles)
+    context = {
+        'form': form
+    }
+    return render(request, 'articles/update.html', context)

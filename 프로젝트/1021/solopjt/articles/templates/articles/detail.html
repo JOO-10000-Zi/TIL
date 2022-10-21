@@ -6,14 +6,18 @@
   <div class="m-3">
     <h1>{{ articles.title }}</h1>
     <hr>
-
+    <p>작성자 :
+      <b>{{ articles.user }}
+      </b>님
+    </p>
     <p>내용 :
       {{ articles.content }}</p>
     <br>
     <hr>
     {% if request.user == articles.user %}
-      <a class="btn btn-primary py-sm-1" href="" role="button">변경</a>
+      <a class="btn btn-primary py-sm-1" href="{% url 'articles:update' articles.pk %}" role="button">수정</a>
       <a class="btn btn-danger py-sm-1" href="" role="button">삭제</a>
     {% endif %}
+    <a class='btn btn-dark py-sm-1' href="{% url 'articles:index' %}">목록</a>
   </div>
 {% endblock %}
