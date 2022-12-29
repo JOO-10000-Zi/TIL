@@ -8,8 +8,10 @@
     <hr>
     <p>작성자 : {{ articles.user }}
     <p>{{ articles.content }}</p>
+    
     {% if articles.image %}
     <img src="{{ articles.image.url }}" alt="{{ articles.image }}"><br>
+    
     {% endif %}
     {% if request.user.is_authenticated %}
     <a class="btn btn-dark py-sm-1 my-3" href="" role="button">수정하기</a>

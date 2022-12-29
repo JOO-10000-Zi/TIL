@@ -28,18 +28,54 @@
       .card {
         display: block;
       }
+    
+    .table,
+    .small-list-group {
+          display: none;
+        }
 
-      .table,
-      .small-list-group {
-        display: none;
       }
-    }
+
+      .movie {
+      position: relative;
+      }
+
+      .overlay {
+        position: absolute;
+        border-radius: 0;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        height: 100%;
+        width: 100%;
+        opacity: 0%;
+        transition: .5s ease;
+        background-color: rgba(0, 0, 0, 0.5);
+        transform: translate(-50%, -50%);
+        }
+  
+      .overlay-text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+       }
+  
+      .movie:hover .overlay {
+        opacity: 1;
+        }
   </style>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container-fluid" id="navbar">
+    <div class="container" id="navbar">
       <a class="navbar-brand" href="#"><img src="./images/logo.png" style="width: 100px;" alt="img"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -119,34 +155,40 @@
   <div class="container">
     <h2 class="text-center fw-bold my-5">Boxoffice</h2>
     <div class="row">
-      <div class="col col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+      <div class="col col-lg-4 col-md-6 col-sm-12 col-12 my-3 movie">
         <div class="card">
           <img src="./images/movie1.jpg" class="card-img-top" alt="...">
+          <a class="overlay" href="04_form.html"><div class="overlay-text">상세페이지</div></a>
         </div>
       </div>
-      <div class="col col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+      <div class="col col-lg-4 col-md-6 col-sm-12 col-12 my-3 movie">
         <div class="card">
           <img src="./images/movie2.jpg" class="card-img-top" alt="...">
+          <div class="overlay"><div class="overlay-text">상세페이지</div></div>
         </div>
       </div>
-      <div class="col col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+      <div class="col col-lg-4 col-md-6 col-sm-12 col-12 my-3 movie">
         <div class="card">
           <img src="./images/movie3.jpg" class="card-img-top" alt="...">
+          <div class="overlay"><div class="overlay-text">상세페이지</div></div>
         </div>
       </div>
-      <div class="col col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+      <div class="col col-lg-4 col-md-6 col-sm-12 col-12 my-3 movie">
         <div class="card">
           <img src="./images/movie4.jpg" class="card-img-top" alt="...">
+          <div class="overlay"><div class="overlay-text">상세페이지</div></div>
         </div>
       </div>
-      <div class="col col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+      <div class="col col-lg-4 col-md-6 col-sm-12 col-12 my-3 movie">
         <div class="card">
           <img src="./images/movie5.jpg" class="card-img-top" alt="...">
+          <div class="overlay"><div class="overlay-text">상세페이지</div></div>
         </div>
       </div>
-      <div class="col col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+      <div class="col col-lg-4 col-md-6 col-sm-12 col-12 my-3 movie">
         <div class="card">
           <img src="./images/movie6.jpg" class="card-img-top" alt="...">
+          <div class="overlay"><div class="overlay-text">상세페이지</div></div>
         </div>
       </div>
     </div>
@@ -162,6 +204,7 @@
           <li class="list-group-item text-primary">Movies</li>
           <li class="list-group-item text-primary">Genres</li>
           <li class="list-group-item text-primary">Actors</li>
+          <a class="list-group-item text-primary" href="04_form.html">리뷰 작성</a>
         </ul>
       </div>
       <div class="col-12 col-lg-10">
@@ -207,6 +250,7 @@
             </tr>
           </tbody>
         </table>
+      
 
         <div class="card my-2 small-card">
           <div class="card-body">

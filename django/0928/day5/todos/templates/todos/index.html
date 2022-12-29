@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>노비야 일 해야지</h1>
+<form action="{% url 'todos:create' %}">
+    <input type="text" name="content___" maxlength="80">
+    <input type="submit" value="할일추가">
+</form>
+<hr>
+{% for todo in todos %}
+<li>{{ todo.pk }} : 제목: {{ todo.content }}
+    <a href="{% url 'todos:delete' todo.pk %}">삭제</a>
+</li>
+{% endfor %}
+
+{% endblock %}

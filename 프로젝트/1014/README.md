@@ -2,9 +2,15 @@
 
 ## MEMBER
 
-1기*1회차*강동현
-1기*1회차*최정아
-1기*1회차*주세환
+1기\_1회차\_강동현
+1기\_1회차\_최정아
+1기\_1회차\_주세환
+
+## PROJECT 목표
+
+### CRUD 기능과 Login기능을 활용한 게시판 구현하기
+
+### 기본 Setting(실제 현업 프로젝트처럼 branch로 작업 하기)
 
 1. [로컬/드라이버] main 브랜치에서 개발 토픽에 해당하는 브랜치 생성 및 브랜치 전환
 
@@ -28,19 +34,19 @@
    ```
 
 4. [원격/드라이버] 토픽 브랜치 병합
+
    1. 깃허브 PR 생성(토픽 브랜치 → main 브랜치)
 
-      ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/26e2083c-b2d5-4a8a-b700-ce32105916b3/Untitled.png)
+      ![image-20221018171250221](assets/image-20221018171250221.png)
 
    2. 브랜치 병합(토픽 브랜치 → main 브랜치)
 
-      ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dcb1d4ef-2f39-4b36-991b-cfd1ffe561c6/Untitled.png)
-
-      ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4c24962f-5b89-4c21-aab7-d055a98caf89/Untitled.png)
+      ![image-20221018171310302](assets/image-20221018171310302.png)![image-20221018171342954](assets/image-20221018171342954.png)
 
    3. 토픽 브랜치 삭제
 
-      ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bd4813a2-ea1a-4e7b-beff-52e6884b07f0/Untitled.png)
+      ![image-20221018171403376](assets/image-20221018171403376.png)
+
 5. [로컬/전체] main 브랜치 전환 후 Pull
 
    ```bash
@@ -86,7 +92,7 @@ git branch -m [기존 브랜치명] [변경할 브랜치명]
 
 ## 토픽
 
-### 1. 깃 설정
+### 1. 깃 설정(강동현)
 
 branch main
 
@@ -102,7 +108,7 @@ branch main
   ```
 - .gitignore 작성
   - 아래 사이트 입력창에 필요한 언어 & 프레임워크 & 환경 입력 후 생성
-  [gitignore.io](https://www.toptal.com/developers/gitignore/)
+    [gitignore.io](https://www.toptal.com/developers/gitignore/)
 
 <aside>
 ❗ 위 과정 완료 후 
@@ -110,12 +116,12 @@ branch main
 [원격/전체] 저장소 Clone 수행
 드라이버 변경
 [로컬/새 드라이버] setup-django 브랜치에서 다음 토픽 진행
+ 
 
-</aside>
 
 ---
 
-### 2. 장고 개발환경 설정
+### 2. 장고 개발환경 설정(최정아)
 
 branch setup-django
 
@@ -124,7 +130,7 @@ Django 프로젝트 생성
 - 가상환경 생성 & 실행
 - 필요한 패키지 설치git
   주의
-  ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d49ddbaf-6c78-4244-973d-0206774246d2/Untitled.png)
+  ![image-20221018171706670](assets/image-20221018171706670.png)
 - 패키지 목록 저장
   ```bash
   pip freeze > requirements.txt
@@ -148,7 +154,7 @@ Django 프로젝트 생성
 
 ---
 
-### 3. 회원가입
+### 3. 회원가입(주세환)
 
 branch accounts/signup
 
@@ -193,12 +199,61 @@ branch accounts/signup
 [로컬/드라이버] accounts/signup 브랜치 삭제
 드라이버 변경
 [로컬/새 드라이버] accounts/login 브랜치에서 다음 토픽 진행
+#### 작업 내용 - 기초 app 생성 및 New Model 상속+생성
 
-</aside>
+- config/settings.py에 새로 만든 app를 등록
+
+```python
+INSTALLED_APPS = [
+    'accounts',
+    'django_bootstrap5',
+    'django_extensions',
+    ...
+]
+```
+
+- config/setting.py의 기본 정보 수정(한글 버전으로 수정)
+
+```python
+'DIRS': [BASE_DIR/'templates']
+----------------------------
+LANGUAGE_CODE = 'ko-kr'
+
+TIME_ZONE = 'Asia/Seoul'
+---------------------------
+# AUTH USER 추가
+AUTH_USER_MODEL = 'accounts.user'
+```
+
+- config/urls.py 수정  => include import 추가
+
+```python
+from django.urls import path, include
+
+urlpatterns = [
+    ...
+    path('accounts/', include('accounts.urls')),
+]
+```
+
+- pjt폴더 상위에 template/base.html 추가
+  - 기본 block 설정 및 navbar bootstrap 활용하여 기본 값 설정
+- User 모델 생성
+
+```python
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import get_user_model
+
+class CustomUserCreationForm(UserCreationForm):
+
+        class Meta: 
+            model = get_user_model()
+            fields = ('username', 'password1', 'password2')
+```
 
 ---
 
-### 4. 로그인
+### 4. 로그인(강동현)
 
 branch accounts/login
 
@@ -237,7 +292,7 @@ branch accounts/login
 
 ---
 
-### 5. 회원 목록 조회
+### 5. 회원 목록 조회(최정아)
 
 `branch` accounts/index
 
@@ -268,7 +323,7 @@ branch accounts/login
 
 ---
 
-### 6. 회원 정보 조회
+### 6. 회원 정보 조회(주세환)
 
 `branch` accounts/detail
 
@@ -292,8 +347,9 @@ branch accounts/login
 [원격/전체] main → [로컬/전체] main, Pull 수행
 드라이버 변경
 [로컬/새 드라이버] accounts/update 브랜치에서 다음 토픽 진행
+#### 작업내용
 
-</aside>
+
 
 ---
 
@@ -405,14 +461,14 @@ branch reviews/create
 모델 이름 : Review
 
 - 모델 필드
-  | 이름       | 역할          | 필드     | 속성              |
+  | 이름 | 역할 | 필드 | 속성 |
   | ---------- | ------------- | -------- | ----------------- |
-  | title      | 리뷰 제목     |          |                   |
-  | content    | 리뷰 내용     |          |                   |
-  | movie_name | 영화 이름     |          |                   |
-  | grade      | 영화 평점     |          |                   |
+  | title | 리뷰 제목 | | |
+  | content | 리뷰 내용 | | |
+  | movie_name | 영화 이름 | | |
+  | grade | 영화 평점 | | |
   | created_at | 리뷰 생성시간 | DateTime | auto_now_add=True |
-  | updated_at | 리뷰 수정시간 | DateTime | auto_now = True   |
+  | updated_at | 리뷰 수정시간 | DateTime | auto_now = True |
 
 **기능 View**
 

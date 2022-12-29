@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/1c0332zz/Django_PJT_30.5.git
+	fetch = +refs/*:refs/*
+	mirror = true
+	pushurl = https://github.com/JOO-10000-Zi/PJT_30.5_Mirror.git
