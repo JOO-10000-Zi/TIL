@@ -7,36 +7,40 @@
 ## 📅일자별 강의 기록(~ing)
 
 <details>
-<summary>**2022s년 7월**</summary>
+<summary>2022년 7월</summary>
 <div markdown="1">
 
-2022년 7월 5일 - [마크다운](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0705)
+7월 5일 - [마크다운](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0705)
 
- 7월 6일 -[Git/Github](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0706)
+7월 6일 -[Git/Github](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0706)
 
- 7월 7일 - [원격저장소(Fork&Pull requests)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0707)
+7월 7일 - [원격저장소(Fork&Pull requests)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0707)
 
- 7월 8일 - [취업 준비 특강](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0708/특강)
+7월 8일 - [취업 준비 특강](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0708/특강)
 
- 7월 11일 - [Python(기초)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0711)
+7월 11일 - [Python(기초)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0711)
 
- 7월 12일 - [python(제어문)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0712)
+7월 12일 - [python(제어문)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0712)
 
- 7월 13일 - [python(함수)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0713)
+7월 13일 - [python(함수)](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0713)
 
- 7월 14일 - [python(데이터구조)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0714/0714.md)
+7월 14일 - [python(데이터구조)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0714/0714.md)
 
- 7월 15일 - [python(모듈)&프로젝트](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0715/0715.md)
+7월 15일 - [python(모듈)&프로젝트](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0715/0715.md)
 
- 7월 18일 - [python(에러/예외처리)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0718/0718.md)
+7월 18일 - [python(에러/예외처리)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0718/0718.md)
 
- 7월 19일 - [python(객체지향프로그래밍)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0719/0719.md)
+7월 19일 - [python(객체지향프로그래밍)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0719/0719.md)
 
- 7월 20일 - [python(객체지향프로그매링\_클래스)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0720/0720.md)
+7월 20일 - [python(객체지향프로그매링\_클래스)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0720/0720.md)
 
- 7월 21일 - [python(심화)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0721/0721.md)
+7월 21일 - [python(심화)](https://github.com/JOO-10000-Zi/TIL/blob/master/7월/0721/0721.md)
 
- 7월 22일 - [python(개인프로젝트(테스트))]()
+7월 22일 - [python(개인프로젝트(테스트))](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/7%EC%9B%94/0722)
+
+7월 25일 ~ 8월 11일 - [알고리즘 문제풀이 집중 기간(팀별 코드리뷰)]()
+
+
 
 </div>
 </details>
