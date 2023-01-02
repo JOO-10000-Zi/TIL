@@ -38,15 +38,29 @@
 
 7월 22일 - [python(개인프로젝트(테스트))](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/7%EC%9B%94/0722)
 
-7월 25일 - [python(자료구조1)+알고리즘(풀이&코드리뷰)]()
+7월 25일 - [python(자료구조1)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/7%EC%9B%94/0725)
 
-7월 26일 - [python(자료구조2)+알고리즘(풀이&코드리뷰)]()
+7월 26일 - [python(자료구조2)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/7%EC%9B%94/0726)
 
-7월 27일 - [python(자료구조3)+알고리즘(풀이&코드리뷰)]()
+7월 27일 - [python(자료구조3)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/7%EC%9B%94/0727)
 
-7월 28일 - [python(자료구조4)+알고리즘(풀이&코드리뷰)]()
+7월 28일 - [python(자료구조4)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/7%EC%9B%94/0728)
 
-7월 29일 - [금요특강 & 말고리즘 모의고사(개인)]()
+7월 29일 - [금요특강 & 말고리즘 모의고사(개인)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/7%EC%9B%94/0729)
+
+</div>
+</details>
+
+<details>
+<summary>2022년 8월</summary>
+<div markdown="1">
+8월 1일 - [python(자료구조5)+알고리즘(풀이&코드리뷰)]()
+
+8월 2일 - [python(자료구조6)+알고리즘(풀이&코드리뷰)]()
+
+8월 3일 - [python(알고리즘1)+알고리즘(풀이&코드리뷰)]()
+
+8월 4일 - [python(알고리즘2)+알고리즘(풀이&코드리뷰)]()
 
 </div>
 </details>
