@@ -54,17 +54,18 @@
 <details>
 <summary>2022년 8월</summary>
 <div markdown="1">
-8월 1일 - [python(자료구조5_스택,큐)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0801)
 
-8월 2일 - [python(자료구조6_힙, 셋)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0802)
+8월 1일 - [python(자료구조5\_스택,큐)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0801)
 
-8월 3일 - [python(알고리즘1_이차원리스트)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0803)
+8월 2일 - [python(자료구조6\_힙, 셋)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0802)
 
-8월 4일 - [python(알고리즘2_순회)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0804)
+8월 3일 - [python(알고리즘1\_이차원리스트)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0803)
 
-8월 8일 - [python(알고리즘3_완전탐색)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0808)
+8월 4일 - [python(알고리즘2\_순회)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0804)
 
-8월 9일 - [python(알고리즘4_그래프)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0809)
+8월 8일 - [python(알고리즘3\_완전탐색)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0808)
+
+8월 9일 - [python(알고리즘4\_그래프)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0809)
 
 8월 10일 - [python(알고리즘5_DFR(깊이우선탐색))+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0810)
 
