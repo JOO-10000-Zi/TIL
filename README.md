@@ -67,9 +67,13 @@
 
 8월 9일 - [python(알고리즘4\_그래프)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0809)
 
-8월 10일 - [python(알고리즘5_DFR(깊이우선탐색))+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0810)
+8월 10일 - [python(알고리즘5_DFS(깊이우선탐색))+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0810)
 
 8월 11일 - [python(알고리즘6)+알고리즘(풀이&코드리뷰)+코테준비하기](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0811)
+
+8월 12일 - [python(알고리즘 모의고사)]()
+
+8월 16일 - [데이터베이스1]()
 
 </div>
 </details>
