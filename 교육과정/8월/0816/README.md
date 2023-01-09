@@ -65,11 +65,21 @@
 5. BLOB
    - 입력된 그대로 저확히 저장된 데이터(별다든 타입 없이 그대로 저장)
 
-• Sqlite • 1.특정Type Affinity (1/2컬럼에저장하도록)권장하는INTEGER 2. 3. 4. 5. TEXT BLOB REAL NUMERIC
+__Sqlite Type Affinity (1/2)__
+
+- 특정 컬럼에 저장되도록 권장하는 데이터 타입
+
+1. INTEGER
+2. TEXT
+3. BLOB
+4. REAL
+5. NUMERIC
+
+![image-20230109141504865](assets/image-20230109141504865.png)
 
 ## SQL
 
-  - 관계형 데이터베이스 관리시스템의 데이터관리를 위해 설계된 특수목적으로 프로그래밍언어
+  - 관계형 데이터베이스 관리시스템의 __데이터관리__를 위해 설계된 __특수목적으로 프로그래밍언어__
   - 스키마 생성 및 수정
   - 자료 검색 및 관리
   - 객체 접근 및 정리
@@ -77,15 +87,45 @@
 **DML** : Maripulation language+
 **DCL** : Contaol language
 
-- 필드 제약 조건
- - NOT NULL : NULL 값 입력 금지
- - UNIQUE : 중복값 입력 금지(NULL 값은 중복 가능)
- - PRIMAWRY KET : 테이블에 반드시 하나 NOT NULL + UNIQUE
- - FOREIGN KEY : 외래키, 다른 테이블의 key
- - CHECK : 조건이 설정된 값 조회
+
+![image-20230109141628570](assets/image-20230109141628570.png)
+
+- __SQL Keywords -Data Manipulation Language__
+  - INSERT : 새로운 데이터 삽입(추가)
+  - SELECT : 저장되어있는 데이터 조회
+  - UPDATE :저장되어있는 데이터 갱신
+  - DELETE : 저장되어있는 데이터 삭제
+
+- __필드 제약 조건__
+  - NOT NULL : NULL 값 입력 금지
+  - UNIQUE : 중복값 입력 금지(NULL 값은 중복 가능)
+  - PRIMAWRY KET : 테이블에 반드시 하나 NOT NULL + UNIQUE
+  - FOREIGN KEY : 외래키, 다른 테이블의 key
+  - CHECK : 조건이 설정된 값 조회
 
 ## CRUD
 **CREATE**
- - INSERT
-  - 테이블 단일 행 삽입
-  - 에티블에 정의된 모든 컴럭에 맞춰 순서대로 입력
+ - __INSERT__
+   - 테이블 단일 행 삽입
+     ![image-20230109142146354](assets/image-20230109142146354.png)
+   - 에티블에 정의된 모든 컴럭에 맞춰 순서대로 입력![image-20230109142203289](assets/image-20230109142203289.png)
+
+- __READ__
+  - __SELECT__
+    - 테이블에서 데이터를 조회
+    - SELECT문은 SQLite에서 가장 기본이 되는 문이며 다양한 절(clause)와 함꼐 사용
+      - ORDER BY, DISTINCT, WHERE, LIMIT, GROUP BY ...
+  - __LIMIT__
+    - 쿼리에서 반환되는 행 수를 제한
+    - 특정 행부터 시작해서 조회하기 위해 __OFFSET__ 키워드와 함꼐 사용하기도 함
+  - __WHERE__
+    - 쿼리에서 반환된 행에 대한 특정 검색 조건을 지정
+  - __SELECT DISTINMCT__
+    - 조회 결과에서 중복 행을 제거
+- __DELETE__
+  - 테이블에서 행을 제거
+- __UPDATE__
+  - 기존 행의 데이터를 수정
+  - SET clause에서 테이블의 각 열에 대해 새로운 값을 설정
+
+![image-20230109142740082](assets/image-20230109142740082.png)
