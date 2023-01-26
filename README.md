@@ -54,7 +54,6 @@
 <details>
 <summary>2022년 8월</summary>
 <div markdown="1">
-
 8월 1일 - [python(자료구조5\_스택,큐)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0801)
 
 8월 2일 - [python(자료구조6\_힙, 셋)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0802)
@@ -85,7 +84,13 @@
 
 8월 23일 - [데이터베이스6 + ERD그려보기(실습)]()
 
+8월 24일 - [데이터베이스7]()
 
+8월 25일 - [데이터베이스8 + 데이터베이스 조작(실습)]()
+
+8월 29일 - [Web(웹)1 + html(css) 실습]()
+
+8월 30일 - [Web(웹)2 + html 실습]()
 
 
 
