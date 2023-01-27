@@ -11,6 +11,8 @@
 - 브라우저 화면을 '동적'으로 만들기 위함
 - 브라우저를 조잦할 수 있는 유일한 언어
 
+![image-20230127142746229](assets/image-20230127142746229.png)
+
 ## JavaScript 탄생
 - 1994년 당시 넷스케이프 커뮤니케이션스사의 Netscape Navigator(NN) 브라우저가
   전 세계 점유율을 80% 이상 독점하며 브라우저의 표준 역할을 함
@@ -96,6 +98,8 @@
   - 구문 분석, 해석
   - 브라우저가 문자열을 해석하여 DOM Tree로 만드는 과정
 
+![image-20230127142923156](assets/image-20230127142923156.png)
+
 ### BOM 이란?
 
 - Browser Object Model
@@ -148,7 +152,7 @@
   - id, class 그리고 tag 선택자 등을 모두 사용 가능하므로, 더 구체적이고 유연하게 선택 가능
     ex) document.querySelector('#id’), document.querySelectAll(‘.class')
 
-
+### DOM 선택 - 선택 매서드별 반환 타입
 
 1. 단일 element
    - querySelector()
@@ -168,11 +172,11 @@
 
 ### DOM 선택 - Collection
 
-- Live Collection
+- **Live Collection**
   - 문서가 바뀔때 실시간으로 업데이트 됨
   - DOM의 변경사항을 실시간으로 COllection에 반영
   - ex) HTMLCollection, NodeList
-- Static Collection (non-live)
+- **Static Collection (non-live)**
   - DOM이 변경되어도 collection 내용에는 영향을 주지 않음
   - querySelectorALL()의 반환 NodeList만 static collection
 

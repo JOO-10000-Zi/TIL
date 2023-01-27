@@ -74,6 +74,14 @@
 
 # CSS Layout
 
+- Display
+- Position
+- Float (CSS1, 1996)
+- Flexbox (2012)
+- Grid (2017)
+- 기타
+  - Responsive Web Design(2010), Media Queries(2012)
+
 ## Flexbox
 
 - 행과 열 형태로 아이템들을 배치하는 1차원 레이아웃 모델
@@ -104,7 +112,7 @@
 
 **Flebox 사용 안할 시 어려운점**
 
-1.  수직 정령
+1.  수직 정렬
 2.  아이템의 너비와 높이, 간격을 동일하게 배치
 
 

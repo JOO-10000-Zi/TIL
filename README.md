@@ -54,7 +54,6 @@
 <details>
 <summary>2022년 8월</summary>
 <div markdown="1"> 
-
 8월 1일 - [python(자료구조5\_스택,큐)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0801)
 
 8월 2일 - [python(자료구조6\_힙, 셋)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0802)
@@ -71,32 +70,65 @@
 
 8월 11일 - [python(알고리즘6)+알고리즘(풀이&코드리뷰)+코테준비하기](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0811)
 
-8월 12일 - [python(알고리즘 모의고사)]()
+8월 12일 - [python(알고리즘 모의고사)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0812)
 
-8월 16일 - [데이터베이스1 + 데이터베이스 조작(실습)]()
+8월 16일 - [데이터베이스1 + 데이터베이스 조작(실습)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0816)
 
-8월 17일 - [데이터베이스2 + 데이터베이스 조작(실습)]()
+8월 17일 - [데이터베이스2 + 데이터베이스 조작(실습)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0817)
 
-8월 18일 - [데이터베이스3 + 데이터베이스 조각(실습)]()
+8월 18일 - [데이터베이스3 + 데이터베이스 조각(실습)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0818)
 
-8월 19일 - [데이터베이스4 + 데이터베이스 조작(실습)]()
+8월 19일 - [데이터베이스4 + 데이터베이스 조작(실습)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0819)
 
-8월 22일 - [데이터베이스5 + 데이터베이스 조작(실습)]()
+8월 22일 - [데이터베이스5 + 데이터베이스 조작(실습)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0822)
 
-8월 23일 - [데이터베이스6 + ERD그려보기(실습)]()
+8월 23일 - [데이터베이스6 + ERD그려보기(실습)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0823)
 
-8월 24일 - [데이터베이스7]()
+8월 24일 - [데이터베이스7](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0824)
 
-8월 25일 - [데이터베이스8 + 데이터베이스 조작(실습)]()
+8월 25일 - [데이터베이스8 + 데이터베이스 조작(실습)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0825)
 
-8월 29일 - [Web(웹)1 + html(css) 실습]()
+8월 29일 - [Web(웹)1 + html(css) 실습](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0829)
 
-8월 30일 - [Web(웹)2 + html 실습]()
+8월 30일 - [Web(웹)2 + html 실습](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0830)
+
+8월 31일 - [Wed(웹)3 + html 실습]()
+
+</div>
+</details>
+
+
+
+<details>
+<summary>2022년 9월</summary>
+<div markdown="1"> 
+
+9월 1일 - [Web(웹)4 + html 실습]()
+
+9월 2일 - [웹 프로젝트(Pair) 영화 추천 서비스 만들기(기초)]()
+
+9월 5일 - [Web(웹)5 + html 실습]()
+
+9월 6일 - [Web(웹)6 + html 실습]()
+
+9월 7일 - [Web(웹)7 + html 실습]()
+
+9월 8일 - [html 실습]()
+
+9월 13일 ~ 14일 - [웹 프로젝트(pair) - 영화 추천 사이트(반응형)]()
+
+9월 15일 - [Web(자바스크립트) + JS실습]()
+
+
 
 
 
 </div>
 </details>
+
+
+
+
 
 ## ✍실습 기록(~ing)
 
