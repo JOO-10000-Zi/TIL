@@ -120,9 +120,9 @@
 
 9월 15일 - [Web(자바스크립트) + JS실습](https://github.com/JOO-10000-Zi/TIL/tree/master/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/0915)
 
-9월 16일 - [Web(자바스크립트)+JS실습]()
+9월 16일 - [Web(자바스크립트) + JS실습]()
 
-
+9월 19일 - [Web(자바스크립트) + Js실습(Event)]()
 
 
 
