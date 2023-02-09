@@ -132,6 +132,10 @@
 
 9월 26일 - [Django(Temlpate 알아보기) + 실습(url 입력 값을 통한 랜덤 노출)]()
 
+9월 27일 - [Django(Temlpate 알아보기) + 실습(shell_plus 활용하기)]()
+
+
+
 
 
 </div>
