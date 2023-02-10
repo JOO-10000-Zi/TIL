@@ -9,7 +9,6 @@
 <details>
 <summary>2022년 7월</summary>
 <div markdown="1">
-
 7월 5일 - [마크다운](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0705)
 
 7월 6일 -[Git/Github](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0706)
@@ -134,7 +133,7 @@
 
 9월 27일 - [Django(Temlpate 알아보기) + 실습(shell_plus 활용하기)]()
 
-
+9월 28일 - [Django(QuerySet 알아보기) + 실습(CRUD 만들어 보기)]()
 
 
 
