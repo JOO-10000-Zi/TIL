@@ -133,9 +133,11 @@
 
 9월 27일 - [Django(Temlpate 알아보기) + 실습(shell_plus 활용하기)]()
 
-9월 28일 - [Django(QuerySet 알아보기) + 실습(CRUD 만들어 보기)]()
+9월 28일 - [Django(QuerySet 알아보기) + 실습(CR 실습)]()
 
+9월 29일 - [Django(CRUD) + 실습(CRUD 만들기)]()
 
+9월 30일 - [Pair Project(2인) 리뷰 작성 서비스 만들기(검색기능 추가)]()
 
 </div>
 </details>
