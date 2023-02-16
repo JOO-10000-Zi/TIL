@@ -52,8 +52,7 @@
 
 <details>
 <summary>2022년 8월</summary>
-<div markdown="1"> 
-
+<div markdown="1">
 
 8월 1일 - [python(자료구조5\_스택,큐)+알고리즘(풀이&코드리뷰)](https://github.com/JOO-10000-Zi/TIL/tree/master/%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95/8%EC%9B%94/0801)
 
@@ -98,11 +97,10 @@
 </div>
 </details>
 
-
-
 <details>
 <summary>2022년 9월</summary>
-<div markdown="1"> 
+<div markdown="1">
+
 9월 1일 - [Web(웹)4 + html 실습](https://github.com/JOO-10000-Zi/TIL/tree/master/WEB/0901)
 
 9월 2일 - [웹 프로젝트(Pair) 영화 추천 서비스 만들기(기초)](https://github.com/JOO-10000-Zi/TIL/tree/master/WEB/0902)
@@ -142,9 +140,13 @@
 </div>
 </details>
 
+<details>
+<summary>2022년 10월</summary>
+<div markdown="1">
+10월 4일 - [Djanog(ModelForm) + 실습(Handling HTTP)]()
 
-
-
+</div>
+</details>
 
 ## ✍실습 기록(~ing)
 
