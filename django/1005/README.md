@@ -1,220 +1,144 @@
-# Django CRUD 
+# Admin site
 
-> Django : 파이썬 기반 웹 프레임워크 
-## 1. 가상환경 및 Django 설치
+### 개요
 
-> 가상환경 : 프로젝트별 별도 패키지 관리
-### 1. 가상환경 생성 및 실행
+- Django의 가장 강력한 기능 중 하나인 automatic admin interface 알아보기
+- "관리자 페이지"
+  - 사용자가 아닌 서버의 관리자가 활요하기 위한 페이지
+  - 모델 class를 admin.py에 등록하고 관리
+  - 레코드 생성 여부 확인에 매우 유용하며 직접 레코드를 삽일할 수도 있음
 
-* 가상환경 폴더를 `.gitignore`로 설정을 해둔다.
 
-```bash
-$ python -m venv venv
-$ source venv/Scripts/activate
-(venv) $
-```
 
-### 2. Django 설치 및 기록
+#### admin 계정 생성
 
-```
-$ pip install django==3.2.13
-$ pip freeze > requirements.txt
-```
+![image-20230217112547553](assets/image-20230217112547553.png)
 
-- 추가 프로젝트에 필요한 pip 설치
-  - ex - black, --upgrade pip 등등 프로젝트 편리한 기능 추가
-- requirements.txt 파일을 통해 프로젝트 시 읽어 보기를 통해 같은 설치 환경 구성
+- username과 password를 입력해 관리자 계정을 생성
 
-### 3. Django 프로젝트 생성
+![image-20230217112623494](assets/image-20230217112623494.png)
 
-```bash
-$ django-admin startproject pjt .
-```
 
-- 프로젝트 생성시 마지막 **.**(닷)을 사용 유무에 따라 경로 변경 되는 점 확인
-  - **.** 뺴고할시 새폴더 생성 되며 폴더 안에 프로젝트 폴더 이름으로 다시 생성
 
-## 2. articles app 
+#### admin site 로그인
 
-> Django : 주요 기능 단위의 App 구조, App 별로 MTV를 구조를 가지는 모습 + `urls.py` 
-### 1. app 생성
+- http://127.0.0.1:8000/admin/ 로 접속 후 로그인
+- 계정만 만든 경우 django 관리자 화면에서 모델 클래스는 보이지 않음
 
-```bash
-$ python manage.py startapp app_name
-```
+![image-20230217112722559](assets/image-20230217112722559.png)
 
-- 앱 이름 생성시 
+#### admin에 모델 클래스 등록
 
-### 2. app 등록
+모델의 record를 보기 위해서는 admin.py에 등록 필요
 
-* `settings.py` 파일의 `INSTALLED_APPS`에 추가
+![image-20230217112803696](assets/image-20230217112803696.png)
 
-```python
-INSTALLED_APPS = [
-    'articles',
-    ...
-]
-```
 
-### 3. urls.py 설정
 
-> app 단위의 URL 관리
-```python
-# pjt/urls.py
-urlpatterns = [
-    ...
-    path('articles/', include('articles.urls')),
-]
-```
+#### 등록된 모델 클래스 확인
 
-```python
-# articles/urls.py
-from django.urls import path 
-from . import views
-app_name = 'articles'
-urlpatterns = [
-  # http://127.0.0.1:8000/articles/
-  path('', views.index, name='index'),
-  ...
-]
-```
+![image-20230217112829521](assets/image-20230217112829521.png)
 
-* 활용 : `articles:index` => `/articles/`
 
-* Template에서 활용 예시
-```django
-{% url 'articles:index' %}
-```
 
-* View에서 활용 예시
+#### 데이터 CRUD 테스트
 
-```python
-redirect('articles:index')
-```
+- admin 페이지에서 데이터를 조작해보자
 
-## 3. Model 정의 (DB 설계)
+![image-20230217112859993](assets/image-20230217112859993.png)
 
-### 1. 클래스 정의
 
-```python
-class Article(models.Model):
-    title = models.CharField(max_length=20)
-    content = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-```
 
-### 2. 마이그레이션 파일 생성
+# Static files
 
-* app 폴더 내의 `migrations` 폴더에 생성된 파일 확인
+## 웹서버와 정적 파일
 
-```bash
-$ python manage.py makemigrations
-```
+- 웹 서버는 특정 위치(URL)에 있는 자원(resource)을 요청(HTTP request) 받아서 제공(serving)하는
+  응압(HTTP response)을 처리하는 것을 기본 동작으로 함
+- 즉, 웹 서버는 요청 받은 URL로 서버에 존재하는 정적 자원(static resource)를 제공
 
-### 3. DB 반영(`migrate`)
 
-```bash
-$ python manage.py migrate
-```
 
-## 4. CRUD 기능 구현
+### 정적 파일
 
-### 0. ModelForm 선언
+- 응답할 때 별도의 처리 없이 파일 내용을 그대로 보여주면 되는 파일
+  - 사용자의 요청에 따라 내용이 바뀌는 것이 아니라 요청한 것을 그대로 보져우는 파일
+- 예를 들어, 웹 서버는 일반적으로 이미지, 자바 스크립트 또는 CSS와 같은 미리 준비된 추가
+  파일(움직이지 않는)을 제공해야 함
+- 파일 자체가 고정되어 있고, 서비스 중에도 추가되거나 변경되지 않고 고정되어 있음
+- Django에서는 이러한 파일들을 "Static file"이라 함
+  - Django는 staticfiles 앱을 통해 정적 파일과 관련된 기능을 제공
 
-> 선언된 모델에 따른 필드 구성 (1) Form 생성 (2) 유효성 검사
-```python
-from django import forms
-from .models import Article
-class ArticleForm(forms.ModelForm):
-    class Meta:
-        model = Article
-        fields = ['title', 'content']
-```
 
-### 1. 게시글 생성
 
-> 사용자에게 HTML Form 제공, 입력받은 데이터를 처리 (ModelForm 로직으로 변경)
-#### 1. HTML Form 제공
+### 정적 파일 활용
 
-> GET http://127.0.0.1:8000/articles/create/
-##### (1) urls.py 
+- django.contrib.staticfiles가 INSTALLED_APPS에 포함되어 있는지 확인
+- setting.py에서 STATIC_URL을 정의
+- 템플릿에서 static 템플릿 태그를 사용하여 지정된 상대경로에 대한 URL을 빌드
+  ![image-20230217113453746](assets/image-20230217113453746.png)
 
-##### (2) views.py
+- 앱의 static 디렉토리에 정적 파일을 저장
+  - 예시) my_app/static/my_app_example.jpg
+- **STATICFILES_DIRS**
+  - 'app/static/' 디렉토리 경로(기본경로)를 사용하는 것 외에 추가적인 정적 파일 경로 목록을
+    정의하는 리스트
+  - 추가 파일 디렉토리에 대한 전체 경로를 포함하는 문자열 목록으로 작성되어야 함
 
-```python
-def create(request):
-    article_form = ArticleForm()
-    context = {
-        'article_form': article_form
-    }
-    return render(request, 'articles/create.html', context=context)
-```
+![image-20230217113646258](assets/image-20230217113646258.png)
 
-##### (3) articles/create.html
+- **STATIC_URL**
+  - STAIC_ROOT에 있는 정적 파일을 참조 할 때 사용할 URL
+    - 개발 단계에서는 실제 정적파일들이 저장되어 있는 'app/static/'경로(기본 경로) 및
+      STATICFILES_DIRS에 정의된 추가 경로들을 탐색함
+  - 실제 파일이나 디렉토리가 아니며, URL로만 존대
+  - 비어 있지 않은 값으로 설정 한다면 반드시 slash(/)로 끝아냐 함
 
-* HTML Form 태그 활용시 핵심
+![image-20230217113900898](assets/image-20230217113900898.png)
 
-  * 어떤 필드를 구성할 것인지 (`name`, `value`)
 
-  * 어디로 보낼 것인지 (`action`, `method`)
 
-```django
-<h1>글쓰기</h1>
-<form action="" method="POST">
-  {% csrf_token %}
-  {{ article_form.as_p }}
-  <input type="submit" value="글쓰기">
-</form>
-```
+- **STATIC_ROOT**
+  - collectstaic이 배포를 위해 정적 파일을 수집하는 디렉토리의 절대 경
+  - django 프로젝트에서 사용하는 모든 정적 파일을 한 곳에 모아 넣는 경로
+  - 개발 과정에서 settings.py의 DEBUG 값이 Trud로 설정되어 있으면 해당 값은 작용되지 않음
+    - 직업 작성하지 않으면 django 프로젝트에서는 settings.py에 작성되어 있지 않음
+  - 실 서비스 환경(배포 환경)에서 django의 모든 정적 파일을 다른 웹 서버가 직접 제공하기 위힘
 
-#### 2. 입력받은 데이터 처리
+![image-20230217114850561](assets/image-20230217114850561.png)
 
-> POST http://127.0.0.1:8000/articles/create/
-> 게시글 DB에 생성하고 index 페이지로 redirect
-##### (1) urls.py
+![image-20230217114902928](assets/image-20230217114902928.png)
 
-##### (2) views.py
 
-* GET 요청 처리 흐름
 
-* POST 요청 처리 흐름 (주의! invalid)
 
-```python
-def create(request):
-    if request.method == 'POST':
-        article_form = ArticleForm(request.POST)
-        if article_form.is_valid():
-            article_form.save()
-            return redirect('articles:index')
-    else: 
-        article_form = ArticleForm()
-    context = {
-        'article_form': article_form
-    }
-    return render(request, 'articles/new.html', context=context)
-```
 
-### 2. 게시글 목록
 
-> DB에서 게시글을 가져와서, template에 전달
-### 3. 상세보기
 
-> 특정한 글을 본다.
-> http://127.0.0.1:8000/articles/<int:pk>/
-### 4. 삭제하기
+- **load**
+  - 사용자 정의 템플릿 태그 세트를 로드(load)
+  - 로드하는 라이브러리, 패키지에 등록된 모든 캐그와 필터를 불러옴
+- **static**
+  - STATIC_ROOT에 저장된 정적 파일에 연결
+    ![image-20230217115045959](assets/image-20230217115045959.png)
 
-> 특정한 글을 삭제한다.
-> http://127.0.0.1:8000/articles/<int:pk>/delete/
-### 5. 수정하기
 
-> 특정한 글을 수정한다. => 사용자에게 수정할 수 양식을 제공하고(GET) 특정한 글을 수정한다.(POST)
-> http://127.0.0.1:8000/articles/<int:pk>/update/
 
-## 추천 문서
+### 1. 정적 파일 사용하기 - 기본 경로
 
-* [HTTP request & response object](https://docs.djangoproject.com/en/4.1/ref/request-response/)
+![image-20230217115117261](assets/image-20230217115117261.png)
 
-* [ModelForm](https://docs.djangoproject.com/en/4.1/topics/forms/modelforms/)
+### 2. 정적 파일 사용하기 - 추가 경로
 
-* [Django view shortcut functions](https://docs.djangoproject.com/en/4.1/topics/http/shortcuts/)
+![image-20230217115155221](assets/image-20230217115155221.png)
+
+### 3. STATIC_URL 확인
+
+![image-20230217115222874](assets/image-20230217115222874.png)
+
+
+
+
+
+
+

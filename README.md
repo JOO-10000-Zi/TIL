@@ -127,9 +127,9 @@
 
 9월 22일 - [Django따라하기 + Django실습(정적, 동적 사이트 만들기)]()
 
-9월 26일 - [Django(Temlpate 알아보기) + 실습(url 입력 값을 통한 랜덤 노출)]()
+9월 26일 - [Django(Template 알아보기) + 실습(url 입력 값을 통한 랜덤 노출)]()
 
-9월 27일 - [Django(Temlpate 알아보기) + 실습(shell_plus 활용하기)]()
+9월 27일 - [Django(Template 알아보기) + 실습(shell_plus 활용하기)]()
 
 9월 28일 - [Django(QuerySet 알아보기) + 실습(CR 실습)]()
 
@@ -143,7 +143,13 @@
 <details>
 <summary>2022년 10월</summary>
 <div markdown="1">
-10월 4일 - [Djanog(ModelForm) + 실습(Handling HTTP)]()
+10월 4일 - [Django(ModelForm) + 실습(오전강의 복습(Handling HTTP)]()
+
+10월 5일 - [Django(Admin site 사용하기) + 실습(오전 강의 복습(Admin site))]()
+
+10월 6일 - [오전 질의 응답 시간 + Django(ModelForm, staticfiles 활용 실습 해보기)]()
+
+
 
 </div>
 </details>
