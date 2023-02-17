@@ -149,6 +149,10 @@
 
 10월 6일 - [오전 질의 응답 시간 + Django(ModelForm, staticfiles 활용 실습 해보기)]()
 
+10월 7일 - [PairProject(3인) - 리뷰 게시판 CRUD + STATICFILES 활용]()
+
+10월 11일 - [Django(회원가입) + 실습(User, 회원가입 form 활용 하기)]()
+
 
 
 </div>
