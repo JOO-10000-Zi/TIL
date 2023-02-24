@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container ">
+    <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+        <h1 class="text-center">리뷰 글 수정하기</h1>
+    </div>
+    <hr>
+    <div class="container d-flex justify-content-center ">
+        <form action="{% url 'pair:update' pk.pk %}">
+
+            <div class="input-group input-group-lg mb-5" style="width: 50rem;">
+                <span class="input-group-text" id="inputGroup-sizing-lg">제목</span>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg" name="title" value="{{pk.title}}">
+            </div>
+
+            <div class="input-group input-group-lg mb-5" style="width: 50rem; height:20rem; ">
+                <span class="input-group-text" id="inputGroup-sizing-lg">본문</span>
+                <textarea type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg" name="content">{{pk.content}}</textarea>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <input class="btn btn-primary " type="submit" name="" id="" value="작성하기">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

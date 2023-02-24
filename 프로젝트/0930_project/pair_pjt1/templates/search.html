@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div>
+    <div class=" d-flex justify-content-center align-items-center  " style="height: 10rem;">
+        <h1 class="">{{search}}에 대한 검색 결과</h1>
+
+    </div>
+
+    <table class="table table-dark  table-hover p-3 container text-center">
+        <thead>
+            <th>리뷰 번호</th>
+            <th>리뷰 제목</th>
+            <th>작성 시간</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                {%for k in searched%}
+                <td>{{ k.id }} </td>
+                <td><a href="{% url 'pair:detail' k.id %}">{{ k.title }}</a></td>
+                <td>{{ k.created_at }}</td>
+            </tr>
+        </tbody>
+        {% endfor %}
+
+    </table>
+    <div class="d-flex justify-content-end container">
+        <a href="{% url 'pair:create' %}" class="btn btn-primary" role="button">리뷰 작성하기</a>
+    </div>
+</div>
+{% endblock %}
