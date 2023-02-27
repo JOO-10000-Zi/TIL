@@ -100,7 +100,6 @@
 <details>
 <summary>2022년 9월</summary>
 <div markdown="1">
-
 9월 1일 - [Web(웹)4 + html 실습](https://github.com/JOO-10000-Zi/TIL/tree/master/WEB/0901)
 
 9월 2일 - [웹 프로젝트(Pair) 영화 추천 서비스 만들기(기초)](https://github.com/JOO-10000-Zi/TIL/tree/master/WEB/0902)
@@ -117,25 +116,25 @@
 
 9월 15일 - [Web(자바스크립트) + JS실습](https://github.com/JOO-10000-Zi/TIL/tree/master/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/0915)
 
-9월 16일 - [Web(자바스크립트) + JS실습]()
+9월 16일 - [Web(자바스크립트) + JS실습](https://github.com/JOO-10000-Zi/TIL/tree/master/JavaScript/0916)
 
-9월 19일 - [Web(자바스크립트) + Js실습(Event)]()
+9월 19일 - [Web(자바스크립트) + Js실습(Event)](https://github.com/JOO-10000-Zi/TIL/tree/master/JavaScript/0919)
 
-9월 20일 - [JS실습(로또 번호 추첨 만들기)]()
+9월 20일 - [JS실습(로또 번호 추첨 만들기)](https://github.com/JOO-10000-Zi/TIL/tree/master/JavaScript/0920)
 
-9월 21일 - [Django기초 + Django실습(가상환경 및 서비스 구축)]()
+9월 21일 - [Django기초 + Django실습(가상환경 및 서비스 구축)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/0921)
 
-9월 22일 - [Django따라하기 + Django실습(정적, 동적 사이트 만들기)]()
+9월 22일 - [Django따라하기 + Django실습(정적, 동적 사이트 만들기)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/0922)
 
-9월 26일 - [Django(Template 알아보기) + 실습(url 입력 값을 통한 랜덤 노출)]()
+9월 26일 - [Django(Template 알아보기) + 실습(url 입력 값을 통한 랜덤 노출)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/0926)
 
-9월 27일 - [Django(Template 알아보기) + 실습(shell_plus 활용하기)]()
+9월 27일 - [Django(Template 알아보기) + 실습(shell_plus 활용하기)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/0927)
 
-9월 28일 - [Django(QuerySet 알아보기) + 실습(CR 실습)]()
+9월 28일 - [Django(QuerySet 알아보기) + 실습(CR 실습)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/0928)
 
-9월 29일 - [Django(CRUD) + 실습(CRUD 만들기)]()
+9월 29일 - [Django(CRUD) + 실습(CRUD 만들기)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/0929)
 
-9월 30일 - [Pair Project(2인) 리뷰 작성 서비스 만들기(검색기능 추가)]()
+9월 30일 - [Pair Project(2인) 리뷰 작성 서비스 만들기(검색기능 추가)](https://github.com/JOO-10000-Zi/TIL/tree/master/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/0930_project)
 
 </div>
 </details>
@@ -143,19 +142,25 @@
 <details>
 <summary>2022년 10월</summary>
 <div markdown="1">
-10월 4일 - [Django(ModelForm) + 실습(오전강의 복습(Handling HTTP)]()
 
-10월 5일 - [Django(Admin site 사용하기) + 실습(오전 강의 복습(Admin site))]()
 
-10월 6일 - [오전 질의 응답 시간 + Django(ModelForm, staticfiles 활용 실습 해보기)]()
+10월 4일 - [Django(ModelForm) + 실습(오전강의 복습(Handling HTTP)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1004)
 
-10월 7일 - [PairProject(3인) - 리뷰 게시판 CRUD + STATICFILES 활용]()
+10월 5일 - [Django(Admin site 사용하기) + 실습(오전 강의 복습(Admin site))](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1005)
 
-10월 11일 - [Django(회원가입) + 실습(User, 회원가입 form 활용 하기)]()
+10월 6일 - [오전 질의 응답 시간 + Django(ModelForm, staticfiles 활용 실습 해보기)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1006)
 
-10월 12일 - [Django(로그인) + 실습(로그인기능 활용해보기)]()
+10월 7일 - [PairProject(3인) - 리뷰 게시판 CRUD + STATICFILES 활용](https://github.com/JOO-10000-Zi/TIL/tree/master/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/1007)
 
-10월 13일 - [Django(회원정보 수정) + 실습(회원정보 수정 폼, 비밀번호 변경 폼 만들어보기)]()
+10월 11일 - [Django(회원가입) + 실습(User, 회원가입 form 활용 하기)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1011)
+
+10월 12일 - [Django(로그인) + 실습(로그인기능 활용해보기)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1012)
+
+10월 13일 - [Django(회원정보 수정) + 실습(회원정보 수정 폼, 비밀번호 변경 폼 만들어보기)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1013)
+
+10월 14일 - [Pair Project(3인) CRUD + Login 활용하여 게시판 만들기]()
+
+10월 17일 - [Django(이미지 업로드) + 실습(이미지 업로드 설정 및 Resizing)]()
 
 </div>
 </details>
