@@ -142,8 +142,6 @@
 <details>
 <summary>2022년 10월</summary>
 <div markdown="1">
-
-
 10월 4일 - [Django(ModelForm) + 실습(오전강의 복습(Handling HTTP)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1004)
 
 10월 5일 - [Django(Admin site 사용하기) + 실습(오전 강의 복습(Admin site))](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1005)
@@ -162,7 +160,10 @@
 
 10월 17일 - [Django(이미지 업로드) + 실습(이미지 업로드 설정 및 Resizing)]()
 
+10월 18일 - [Django(1:1, 1:N, M:N 관계) + 실습(Relationship 구현해보기)]()
+
 </div>
+
 </details>
 
 ## ✍실습 기록(~ing)
