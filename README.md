@@ -9,7 +9,9 @@
 <details>
 <summary>2022년 7월</summary>
 <div markdown="1">
+
 7월 5일 - [마크다운](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0705)
+
 
 7월 6일 -[Git/Github](https://github.com/JOO-10000-Zi/TIL/tree/master/7월/0706)
 
@@ -100,7 +102,9 @@
 <details>
 <summary>2022년 9월</summary>
 <div markdown="1">
+
 9월 1일 - [Web(웹)4 + html 실습](https://github.com/JOO-10000-Zi/TIL/tree/master/WEB/0901)
+
 
 9월 2일 - [웹 프로젝트(Pair) 영화 추천 서비스 만들기(기초)](https://github.com/JOO-10000-Zi/TIL/tree/master/WEB/0902)
 
@@ -142,7 +146,9 @@
 <details>
 <summary>2022년 10월</summary>
 <div markdown="1">
+
 10월 4일 - [Django(ModelForm) + 실습(오전강의 복습(Handling HTTP)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1004)
+
 
 10월 5일 - [Django(Admin site 사용하기) + 실습(오전 강의 복습(Admin site))](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1005)
 
@@ -161,6 +167,8 @@
 10월 17일 - [Django(이미지 업로드) + 실습(이미지 업로드 설정 및 Resizing)]()
 
 10월 18일 - [Django(1:1, 1:N, M:N 관계) + 실습(Relationship 구현해보기)]()
+
+10월 19일 - [Django(User - Comment) + 실습(관계 모델 구현하기)]()
 
 </div>
 
