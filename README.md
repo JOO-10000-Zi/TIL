@@ -170,6 +170,12 @@
 
 10월 19일 - [Django(User - Comment) + 실습(관계 모델 구현하기)]()
 
+10월 21일 - [Project 개별 공부 진행(CRUD, static, 1:N)]()
+
+10월 24일 - [Django(Many to many relationship) + 실습(many to many 구현하기)]()
+
+
+
 </div>
 
 </details>
