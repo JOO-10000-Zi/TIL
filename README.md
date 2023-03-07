@@ -162,21 +162,21 @@
 
 10월 13일 - [Django(회원정보 수정) + 실습(회원정보 수정 폼, 비밀번호 변경 폼 만들어보기)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1013)
 
-10월 14일 - [Pair Project(3인) CRUD + Login 활용하여 게시판 만들기]()
+10월 14일 - [Pair Project(3인) CRUD + Login 활용하여 게시판 만들기](https://github.com/JOO-10000-Zi/TIL/tree/master/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/1014)
 
-10월 17일 - [Django(이미지 업로드) + 실습(이미지 업로드 설정 및 Resizing)]()
+10월 17일 - [Django(이미지 업로드) + 실습(이미지 업로드 설정 및 Resizing)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1017)
 
-10월 18일 - [Django(1:1, 1:N, M:N 관계) + 실습(Relationship 구현해보기)]()
+10월 18일 - [Django(1:1, 1:N, M:N 관계) + 실습(Relationship 구현해보기)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1018)
 
-10월 19일 - [Django(User - Comment) + 실습(관계 모델 구현하기)]()
+10월 19일 - [Django(User - Comment) + 실습(관계 모델 구현하기)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1019)
 
-10월 21일 - [Project 개별 공부 진행(CRUD, static, 1:N)]()
+10월 21일 - [Project 개별 공부 진행(CRUD, static, 1:N)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1021)
 
-10월 24일 - [Django(Many to many relationship(Article-User)) + 실습(many to many 구현하기)]()
+10월 24일 - [Django(Many to many relationship(Article-User)) + 실습(many to many 구현하기)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1024)
 
-10월 25일 - [Django(M:N(User-User)) + 실습(Follow 기능 구현 하기)]()
+10월 25일 - [Django(M:N(User-User)) + 실습(Follow 기능 구현 하기)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1025)
 
-10월 26일 - [Django(Axios) + 실습(JavaScript 좋아요, 팔로우 비동기 처리)]()
+10월 26일 - [Django(Axios) + 실습(JavaScript 좋아요, 팔로우 비동기 처리)](https://github.com/JOO-10000-Zi/TIL/tree/master/django/1026)
 
 
 
