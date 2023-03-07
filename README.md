@@ -172,7 +172,11 @@
 
 10월 21일 - [Project 개별 공부 진행(CRUD, static, 1:N)]()
 
-10월 24일 - [Django(Many to many relationship) + 실습(many to many 구현하기)]()
+10월 24일 - [Django(Many to many relationship(Article-User)) + 실습(many to many 구현하기)]()
+
+10월 25일 - [Django(M:N(User-User)) + 실습(Follow 기능 구현 하기)]()
+
+10월 26일 - [Django(Axios) + 실습(JavaScript 좋아요, 팔로우 비동기 처리)]()
 
 
 
